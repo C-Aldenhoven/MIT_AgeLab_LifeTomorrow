@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  LongLife
+//  LongLifeHealth Watch App
 //
 //  Created by Céline Aldenhoven on 21.04.23.
 //

@@ -7,35 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72A0D28929F2F99D00C31894 /* LongLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0D28829F2F99D00C31894 /* LongLifeApp.swift */; };
-		72A0D28B29F2F99D00C31894 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0D28A29F2F99D00C31894 /* ContentView.swift */; };
-		72A0D28D29F2F99E00C31894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A0D28C29F2F99E00C31894 /* Assets.xcassets */; };
-		72A0D29029F2F99E00C31894 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A0D28F29F2F99E00C31894 /* Preview Assets.xcassets */; };
-		72A0D29629F2F99E00C31894 /* LongLife Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 72A0D29529F2F99E00C31894 /* LongLife Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		72A0D29B29F2F99E00C31894 /* LongLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0D29A29F2F99E00C31894 /* LongLifeApp.swift */; };
-		72A0D29D29F2F99E00C31894 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0D29C29F2F99E00C31894 /* ContentView.swift */; };
-		72A0D29F29F2F9A000C31894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A0D29E29F2F9A000C31894 /* Assets.xcassets */; };
-		72A0D2A229F2F9A000C31894 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A0D2A129F2F9A000C31894 /* Preview Assets.xcassets */; };
+		72A51A2129F3121C00052687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A51A2029F3121C00052687 /* AppDelegate.swift */; };
+		72A51A2329F3121C00052687 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A51A2229F3121C00052687 /* SceneDelegate.swift */; };
+		72A51A2529F3121C00052687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A51A2429F3121C00052687 /* ViewController.swift */; };
+		72A51A2829F3121C00052687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A51A2629F3121C00052687 /* Main.storyboard */; };
+		72A51A2B29F3121C00052687 /* LongLife.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72A51A2929F3121C00052687 /* LongLife.xcdatamodeld */; };
+		72A51A2D29F3121E00052687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A51A2C29F3121E00052687 /* Assets.xcassets */; };
+		72A51A3029F3121E00052687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A51A2E29F3121E00052687 /* LaunchScreen.storyboard */; };
+		72A51A3E29F312BC00052687 /* LongLifeHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A51A3D29F312BC00052687 /* LongLifeHealthApp.swift */; };
+		72A51A4029F312BC00052687 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A51A3F29F312BC00052687 /* ContentView.swift */; };
+		72A51A4229F312BE00052687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A51A4129F312BE00052687 /* Assets.xcassets */; };
+		72A51A4529F312BE00052687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A51A4429F312BE00052687 /* Preview Assets.xcassets */; };
+		72A51A4829F312BE00052687 /* LongLifeHealth Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 72A51A3B29F312BC00052687 /* LongLifeHealth Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		72A0D29729F2F99E00C31894 /* PBXContainerItemProxy */ = {
+		72A51A4629F312BE00052687 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 72A0D27D29F2F99C00C31894 /* Project object */;
+			containerPortal = 72A51A1529F3121C00052687 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 72A0D29429F2F99E00C31894;
-			remoteInfo = "LongLife Watch App";
+			remoteGlobalIDString = 72A51A3A29F312BC00052687;
+			remoteInfo = "LongLifeHealth Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		72A0D2A829F2F9A000C31894 /* Embed Watch Content */ = {
+		72A51A4C29F312BE00052687 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				72A0D29629F2F99E00C31894 /* LongLife Watch App.app in Embed Watch Content */,
+				72A51A4829F312BE00052687 /* LongLifeHealth Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,27 +46,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		72A0D28529F2F99D00C31894 /* LongLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		72A0D28829F2F99D00C31894 /* LongLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLifeApp.swift; sourceTree = "<group>"; };
-		72A0D28A29F2F99D00C31894 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		72A0D28C29F2F99E00C31894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		72A0D28F29F2F99E00C31894 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		72A0D29529F2F99E00C31894 /* LongLife Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LongLife Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72A0D29A29F2F99E00C31894 /* LongLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLifeApp.swift; sourceTree = "<group>"; };
-		72A0D29C29F2F99E00C31894 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		72A0D29E29F2F9A000C31894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		72A0D2A129F2F9A000C31894 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72A51A1D29F3121C00052687 /* LongLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A51A2029F3121C00052687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72A51A2229F3121C00052687 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72A51A2429F3121C00052687 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72A51A2729F3121C00052687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72A51A2A29F3121C00052687 /* LongLife.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LongLife.xcdatamodel; sourceTree = "<group>"; };
+		72A51A2C29F3121E00052687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72A51A2F29F3121E00052687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72A51A3129F3121E00052687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A51A3B29F312BC00052687 /* LongLifeHealth Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LongLifeHealth Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A51A3D29F312BC00052687 /* LongLifeHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLifeHealthApp.swift; sourceTree = "<group>"; };
+		72A51A3F29F312BC00052687 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72A51A4129F312BE00052687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72A51A4429F312BE00052687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		72A0D28229F2F99D00C31894 /* Frameworks */ = {
+		72A51A1A29F3121C00052687 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72A0D29229F2F99E00C31894 /* Frameworks */ = {
+		72A51A3829F312BC00052687 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,58 +80,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		72A0D27C29F2F99C00C31894 = {
+		72A51A1429F3121C00052687 = {
 			isa = PBXGroup;
 			children = (
-				72A0D28729F2F99D00C31894 /* LongLife */,
-				72A0D29929F2F99E00C31894 /* LongLife Watch App */,
-				72A0D28629F2F99D00C31894 /* Products */,
+				72A51A1F29F3121C00052687 /* LongLife */,
+				72A51A3C29F312BC00052687 /* LongLifeHealth Watch App */,
+				72A51A1E29F3121C00052687 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		72A0D28629F2F99D00C31894 /* Products */ = {
+		72A51A1E29F3121C00052687 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				72A0D28529F2F99D00C31894 /* LongLife.app */,
-				72A0D29529F2F99E00C31894 /* LongLife Watch App.app */,
+				72A51A1D29F3121C00052687 /* LongLife.app */,
+				72A51A3B29F312BC00052687 /* LongLifeHealth Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		72A0D28729F2F99D00C31894 /* LongLife */ = {
+		72A51A1F29F3121C00052687 /* LongLife */ = {
 			isa = PBXGroup;
 			children = (
-				72A0D28829F2F99D00C31894 /* LongLifeApp.swift */,
-				72A0D28A29F2F99D00C31894 /* ContentView.swift */,
-				72A0D28C29F2F99E00C31894 /* Assets.xcassets */,
-				72A0D28E29F2F99E00C31894 /* Preview Content */,
+				72A51A2029F3121C00052687 /* AppDelegate.swift */,
+				72A51A2229F3121C00052687 /* SceneDelegate.swift */,
+				72A51A2429F3121C00052687 /* ViewController.swift */,
+				72A51A2629F3121C00052687 /* Main.storyboard */,
+				72A51A2C29F3121E00052687 /* Assets.xcassets */,
+				72A51A2E29F3121E00052687 /* LaunchScreen.storyboard */,
+				72A51A3129F3121E00052687 /* Info.plist */,
+				72A51A2929F3121C00052687 /* LongLife.xcdatamodeld */,
 			);
 			path = LongLife;
 			sourceTree = "<group>";
 		};
-		72A0D28E29F2F99E00C31894 /* Preview Content */ = {
+		72A51A3C29F312BC00052687 /* LongLifeHealth Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				72A0D28F29F2F99E00C31894 /* Preview Assets.xcassets */,
+				72A51A3D29F312BC00052687 /* LongLifeHealthApp.swift */,
+				72A51A3F29F312BC00052687 /* ContentView.swift */,
+				72A51A4129F312BE00052687 /* Assets.xcassets */,
+				72A51A4329F312BE00052687 /* Preview Content */,
 			);
-			path = "Preview Content";
+			path = "LongLifeHealth Watch App";
 			sourceTree = "<group>";
 		};
-		72A0D29929F2F99E00C31894 /* LongLife Watch App */ = {
+		72A51A4329F312BE00052687 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				72A0D29A29F2F99E00C31894 /* LongLifeApp.swift */,
-				72A0D29C29F2F99E00C31894 /* ContentView.swift */,
-				72A0D29E29F2F9A000C31894 /* Assets.xcassets */,
-				72A0D2A029F2F9A000C31894 /* Preview Content */,
-			);
-			path = "LongLife Watch App";
-			sourceTree = "<group>";
-		};
-		72A0D2A029F2F9A000C31894 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				72A0D2A129F2F9A000C31894 /* Preview Assets.xcassets */,
+				72A51A4429F312BE00052687 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -132,61 +135,61 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		72A0D28429F2F99D00C31894 /* LongLife */ = {
+		72A51A1C29F3121C00052687 /* LongLife */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72A0D2A929F2F9A000C31894 /* Build configuration list for PBXNativeTarget "LongLife" */;
+			buildConfigurationList = 72A51A3429F3121E00052687 /* Build configuration list for PBXNativeTarget "LongLife" */;
 			buildPhases = (
-				72A0D28129F2F99D00C31894 /* Sources */,
-				72A0D28229F2F99D00C31894 /* Frameworks */,
-				72A0D28329F2F99D00C31894 /* Resources */,
-				72A0D2A829F2F9A000C31894 /* Embed Watch Content */,
+				72A51A1929F3121C00052687 /* Sources */,
+				72A51A1A29F3121C00052687 /* Frameworks */,
+				72A51A1B29F3121C00052687 /* Resources */,
+				72A51A4C29F312BE00052687 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				72A0D29829F2F99E00C31894 /* PBXTargetDependency */,
+				72A51A4729F312BE00052687 /* PBXTargetDependency */,
 			);
 			name = LongLife;
 			productName = LongLife;
-			productReference = 72A0D28529F2F99D00C31894 /* LongLife.app */;
+			productReference = 72A51A1D29F3121C00052687 /* LongLife.app */;
 			productType = "com.apple.product-type.application";
 		};
-		72A0D29429F2F99E00C31894 /* LongLife Watch App */ = {
+		72A51A3A29F312BC00052687 /* LongLifeHealth Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72A0D2A529F2F9A000C31894 /* Build configuration list for PBXNativeTarget "LongLife Watch App" */;
+			buildConfigurationList = 72A51A4929F312BE00052687 /* Build configuration list for PBXNativeTarget "LongLifeHealth Watch App" */;
 			buildPhases = (
-				72A0D29129F2F99E00C31894 /* Sources */,
-				72A0D29229F2F99E00C31894 /* Frameworks */,
-				72A0D29329F2F99E00C31894 /* Resources */,
+				72A51A3729F312BC00052687 /* Sources */,
+				72A51A3829F312BC00052687 /* Frameworks */,
+				72A51A3929F312BC00052687 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "LongLife Watch App";
-			productName = "LongLife Watch App";
-			productReference = 72A0D29529F2F99E00C31894 /* LongLife Watch App.app */;
+			name = "LongLifeHealth Watch App";
+			productName = "LongLifeHealth Watch App";
+			productReference = 72A51A3B29F312BC00052687 /* LongLifeHealth Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		72A0D27D29F2F99C00C31894 /* Project object */ = {
+		72A51A1529F3121C00052687 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					72A0D28429F2F99D00C31894 = {
+					72A51A1C29F3121C00052687 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					72A0D29429F2F99E00C31894 = {
+					72A51A3A29F312BC00052687 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 72A0D28029F2F99C00C31894 /* Build configuration list for PBXProject "LongLife" */;
+			buildConfigurationList = 72A51A1829F3121C00052687 /* Build configuration list for PBXProject "LongLife" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -194,69 +197,91 @@
 				en,
 				Base,
 			);
-			mainGroup = 72A0D27C29F2F99C00C31894;
-			productRefGroup = 72A0D28629F2F99D00C31894 /* Products */;
+			mainGroup = 72A51A1429F3121C00052687;
+			productRefGroup = 72A51A1E29F3121C00052687 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				72A0D28429F2F99D00C31894 /* LongLife */,
-				72A0D29429F2F99E00C31894 /* LongLife Watch App */,
+				72A51A1C29F3121C00052687 /* LongLife */,
+				72A51A3A29F312BC00052687 /* LongLifeHealth Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		72A0D28329F2F99D00C31894 /* Resources */ = {
+		72A51A1B29F3121C00052687 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A0D29029F2F99E00C31894 /* Preview Assets.xcassets in Resources */,
-				72A0D28D29F2F99E00C31894 /* Assets.xcassets in Resources */,
+				72A51A3029F3121E00052687 /* LaunchScreen.storyboard in Resources */,
+				72A51A2D29F3121E00052687 /* Assets.xcassets in Resources */,
+				72A51A2829F3121C00052687 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72A0D29329F2F99E00C31894 /* Resources */ = {
+		72A51A3929F312BC00052687 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A0D2A229F2F9A000C31894 /* Preview Assets.xcassets in Resources */,
-				72A0D29F29F2F9A000C31894 /* Assets.xcassets in Resources */,
+				72A51A4529F312BE00052687 /* Preview Assets.xcassets in Resources */,
+				72A51A4229F312BE00052687 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		72A0D28129F2F99D00C31894 /* Sources */ = {
+		72A51A1929F3121C00052687 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A0D28B29F2F99D00C31894 /* ContentView.swift in Sources */,
-				72A0D28929F2F99D00C31894 /* LongLifeApp.swift in Sources */,
+				72A51A2529F3121C00052687 /* ViewController.swift in Sources */,
+				72A51A2B29F3121C00052687 /* LongLife.xcdatamodeld in Sources */,
+				72A51A2129F3121C00052687 /* AppDelegate.swift in Sources */,
+				72A51A2329F3121C00052687 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72A0D29129F2F99E00C31894 /* Sources */ = {
+		72A51A3729F312BC00052687 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A0D29D29F2F99E00C31894 /* ContentView.swift in Sources */,
-				72A0D29B29F2F99E00C31894 /* LongLifeApp.swift in Sources */,
+				72A51A4029F312BC00052687 /* ContentView.swift in Sources */,
+				72A51A3E29F312BC00052687 /* LongLifeHealthApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		72A0D29829F2F99E00C31894 /* PBXTargetDependency */ = {
+		72A51A4729F312BE00052687 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 72A0D29429F2F99E00C31894 /* LongLife Watch App */;
-			targetProxy = 72A0D29729F2F99E00C31894 /* PBXContainerItemProxy */;
+			target = 72A51A3A29F312BC00052687 /* LongLifeHealth Watch App */;
+			targetProxy = 72A51A4629F312BE00052687 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		72A51A2629F3121C00052687 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A51A2729F3121C00052687 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72A51A2E29F3121E00052687 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A51A2F29F3121E00052687 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		72A0D2A329F2F9A000C31894 /* Debug */ = {
+		72A51A3229F3121E00052687 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,15 +331,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		72A0D2A429F2F9A000C31894 /* Release */ = {
+		72A51A3329F3121E00052687 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,25 +385,92 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		72A0D2A629F2F9A000C31894 /* Debug */ = {
+		72A51A3529F3121E00052687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 527WDPJ695;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LongLife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LongLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		72A51A3629F3121E00052687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 527WDPJ695;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LongLife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LongLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		72A51A4A29F312BE00052687 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LongLife Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LongLifeHealth Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 527WDPJ695;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = LongLife;
+				INFOPLIST_KEY_CFBundleDisplayName = LongLifeHealth;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = MIT.AgeLab.LongLife;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -395,18 +489,18 @@
 			};
 			name = Debug;
 		};
-		72A0D2A729F2F9A000C31894 /* Release */ = {
+		72A51A4B29F312BE00052687 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LongLife Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LongLifeHealth Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 527WDPJ695;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = LongLife;
+				INFOPLIST_KEY_CFBundleDisplayName = LongLifeHealth;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = MIT.AgeLab.LongLife;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -421,109 +515,54 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 9.1;
-			};
-			name = Release;
-		};
-		72A0D2AA29F2F9A000C31894 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LongLife/Preview Content\"";
-				DEVELOPMENT_TEAM = 527WDPJ695;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = LongLife;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LongLife;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		72A0D2AB29F2F9A000C31894 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LongLife/Preview Content\"";
-				DEVELOPMENT_TEAM = 527WDPJ695;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = LongLife;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LongLife;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		72A0D28029F2F99C00C31894 /* Build configuration list for PBXProject "LongLife" */ = {
+		72A51A1829F3121C00052687 /* Build configuration list for PBXProject "LongLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72A0D2A329F2F9A000C31894 /* Debug */,
-				72A0D2A429F2F9A000C31894 /* Release */,
+				72A51A3229F3121E00052687 /* Debug */,
+				72A51A3329F3121E00052687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72A0D2A529F2F9A000C31894 /* Build configuration list for PBXNativeTarget "LongLife Watch App" */ = {
+		72A51A3429F3121E00052687 /* Build configuration list for PBXNativeTarget "LongLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72A0D2A629F2F9A000C31894 /* Debug */,
-				72A0D2A729F2F9A000C31894 /* Release */,
+				72A51A3529F3121E00052687 /* Debug */,
+				72A51A3629F3121E00052687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72A0D2A929F2F9A000C31894 /* Build configuration list for PBXNativeTarget "LongLife" */ = {
+		72A51A4929F312BE00052687 /* Build configuration list for PBXNativeTarget "LongLifeHealth Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72A0D2AA29F2F9A000C31894 /* Debug */,
-				72A0D2AB29F2F9A000C31894 /* Release */,
+				72A51A4A29F312BE00052687 /* Debug */,
+				72A51A4B29F312BE00052687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		72A51A2929F3121C00052687 /* LongLife.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				72A51A2A29F3121C00052687 /* LongLife.xcdatamodel */,
+			);
+			currentVersion = 72A51A2A29F3121C00052687 /* LongLife.xcdatamodel */;
+			path = LongLife.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 72A0D27D29F2F99C00C31894 /* Project object */;
+	rootObject = 72A51A1529F3121C00052687 /* Project object */;
 }
