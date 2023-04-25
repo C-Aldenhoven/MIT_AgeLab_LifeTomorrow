@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  LongLifeHealth Watch App
+//  LongLifeWatch Watch App
 //
-//  Created by Céline Aldenhoven on 21.04.23.
+//  Created by Céline Aldenhoven on 25.04.23.
 //
 
 import SwiftUI

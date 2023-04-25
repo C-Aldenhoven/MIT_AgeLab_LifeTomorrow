@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  LongLife
 //
-//  Created by Céline Aldenhoven on 21.04.23.
+//  Created by Céline Aldenhoven on 25.04.23.
 //
 
 import UIKit
