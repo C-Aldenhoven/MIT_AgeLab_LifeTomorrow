@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  LifeTomorrow Watch Watch App
+//  LifeTomorrowWatch Watch App
 //
-//  Created by Céline Aldenhoven on 02.05.23.
+//  Created by Céline Aldenhoven on 04.05.23.
 //
 
 import SwiftUI

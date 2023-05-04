@@ -13,6 +13,10 @@
 		726FB2612A01655E0077B990 /* LifeTomorrow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 726FB25F2A01655E0077B990 /* LifeTomorrow.xcdatamodeld */; };
 		726FB2632A0165600077B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB2622A0165600077B990 /* Assets.xcassets */; };
 		726FB2882A0424BB0077B990 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2872A0424BB0077B990 /* NavigationController.swift */; };
+		726FB2982A0440450077B990 /* LifeTomorrowWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2972A0440450077B990 /* LifeTomorrowWatchApp.swift */; };
+		726FB29A2A0440450077B990 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2992A0440450077B990 /* ContentView.swift */; };
+		726FB29C2A0440470077B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB29B2A0440470077B990 /* Assets.xcassets */; };
+		726FB29F2A0440470077B990 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB29E2A0440470077B990 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +28,23 @@
 		726FB2622A0165600077B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726FB2672A0165600077B990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		726FB2872A0424BB0077B990 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		726FB2902A043D800077B990 /* LifeTomorrow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeTomorrow.entitlements; sourceTree = "<group>"; };
+		726FB2952A0440450077B990 /* LifeTomorrowWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LifeTomorrowWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		726FB2972A0440450077B990 /* LifeTomorrowWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeTomorrowWatchApp.swift; sourceTree = "<group>"; };
+		726FB2992A0440450077B990 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		726FB29B2A0440470077B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		726FB29E2A0440470077B990 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		726FB2502A01655E0077B990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726FB2922A0440450077B990 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				726FB2552A01655E0077B990 /* LifeTomorrow */,
+				726FB2962A0440450077B990 /* LifeTomorrowWatch Watch App */,
 				726FB2542A01655E0077B990 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				726FB2532A01655E0077B990 /* LifeTomorrow.app */,
+				726FB2952A0440450077B990 /* LifeTomorrowWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +75,7 @@
 		726FB2552A01655E0077B990 /* LifeTomorrow */ = {
 			isa = PBXGroup;
 			children = (
+				726FB2902A043D800077B990 /* LifeTomorrow.entitlements */,
 				726FB2562A01655E0077B990 /* AppDelegate.swift */,
 				726FB2582A01655E0077B990 /* SceneDelegate.swift */,
 				726FB2872A0424BB0077B990 /* NavigationController.swift */,
@@ -107,6 +127,25 @@
 			path = Emergency;
 			sourceTree = "<group>";
 		};
+		726FB2962A0440450077B990 /* LifeTomorrowWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				726FB2972A0440450077B990 /* LifeTomorrowWatchApp.swift */,
+				726FB2992A0440450077B990 /* ContentView.swift */,
+				726FB29B2A0440470077B990 /* Assets.xcassets */,
+				726FB29D2A0440470077B990 /* Preview Content */,
+			);
+			path = "LifeTomorrowWatch Watch App";
+			sourceTree = "<group>";
+		};
+		726FB29D2A0440470077B990 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				726FB29E2A0440470077B990 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +166,23 @@
 			productReference = 726FB2532A01655E0077B990 /* LifeTomorrow.app */;
 			productType = "com.apple.product-type.application";
 		};
+		726FB2942A0440450077B990 /* LifeTomorrowWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726FB2A02A0440470077B990 /* Build configuration list for PBXNativeTarget "LifeTomorrowWatch Watch App" */;
+			buildPhases = (
+				726FB2912A0440450077B990 /* Sources */,
+				726FB2922A0440450077B990 /* Frameworks */,
+				726FB2932A0440450077B990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LifeTomorrowWatch Watch App";
+			productName = "LifeTomorrowWatch Watch App";
+			productReference = 726FB2952A0440450077B990 /* LifeTomorrowWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -138,6 +194,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					726FB2522A01655E0077B990 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					726FB2942A0440450077B990 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -156,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				726FB2522A01655E0077B990 /* LifeTomorrow */,
+				726FB2942A0440450077B990 /* LifeTomorrowWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +226,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				726FB2632A0165600077B990 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726FB2932A0440450077B990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726FB29F2A0440470077B990 /* Preview Assets.xcassets in Resources */,
+				726FB29C2A0440470077B990 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +250,15 @@
 				726FB2882A0424BB0077B990 /* NavigationController.swift in Sources */,
 				726FB2612A01655E0077B990 /* LifeTomorrow.xcdatamodeld in Sources */,
 				726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726FB2912A0440450077B990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726FB29A2A0440450077B990 /* ContentView.swift in Sources */,
+				726FB2982A0440450077B990 /* LifeTomorrowWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeTomorrow/LifeTomorrow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 527WDPJ695;
@@ -337,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeTomorrow/LifeTomorrow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 527WDPJ695;
@@ -363,6 +443,66 @@
 			};
 			name = Release;
 		};
+		726FB2A12A0440470077B990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeTomorrowWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 527WDPJ695;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LifeTomorrowWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LifeTomorrowWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		726FB2A22A0440470077B990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeTomorrowWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 527WDPJ695;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LifeTomorrowWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LifeTomorrowWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -380,6 +520,15 @@
 			buildConfigurations = (
 				726FB26B2A0165600077B990 /* Debug */,
 				726FB26C2A0165600077B990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726FB2A02A0440470077B990 /* Build configuration list for PBXNativeTarget "LifeTomorrowWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726FB2A12A0440470077B990 /* Debug */,
+				726FB2A22A0440470077B990 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
