@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00FCD8964650C086C25565D4 /* Pods_LifeTomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05EEB6BC5026CF95BD8F1F7 /* Pods_LifeTomorrow.framework */; };
+		57FAA4C0EF2257624D050721 /* Pods_LifeTomorrowWatch_Watch_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8054E3BCA24B28CA0828A141 /* Pods_LifeTomorrowWatch_Watch_App.framework */; };
+		720803B32A09700E001E154B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 720803B22A09700E001E154B /* GoogleService-Info.plist */; };
+		720803D02A0975FE001E154B /* SmartHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720803CF2A0975FE001E154B /* SmartHomeViewController.swift */; };
+		720803D22A097612001E154B /* DataSharingAndProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720803D12A097612001E154B /* DataSharingAndProfileViewController.swift */; };
+		720803D42A097628001E154B /* CarePlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720803D32A097628001E154B /* CarePlanViewController.swift */; };
+		720803D62A09763E001E154B /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720803D52A09763E001E154B /* HealthViewController.swift */; };
+		720803D82A09893B001E154B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720803D72A09893B001E154B /* LoginViewController.swift */; };
 		726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2562A01655E0077B990 /* AppDelegate.swift */; };
 		726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2582A01655E0077B990 /* SceneDelegate.swift */; };
 		726FB25B2A01655E0077B990 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB25A2A01655E0077B990 /* HomeViewController.swift */; };
@@ -20,6 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		362A91E15034892E84B8C3EB /* Pods-LifeTomorrow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrow.debug.xcconfig"; path = "Target Support Files/Pods-LifeTomorrow/Pods-LifeTomorrow.debug.xcconfig"; sourceTree = "<group>"; };
+		6424845DDD27369552410ECD /* Pods-LifeTomorrowWatch Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrowWatch Watch App.debug.xcconfig"; path = "Target Support Files/Pods-LifeTomorrowWatch Watch App/Pods-LifeTomorrowWatch Watch App.debug.xcconfig"; sourceTree = "<group>"; };
+		720803B22A09700E001E154B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		720803CF2A0975FE001E154B /* SmartHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeViewController.swift; sourceTree = "<group>"; };
+		720803D12A097612001E154B /* DataSharingAndProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSharingAndProfileViewController.swift; sourceTree = "<group>"; };
+		720803D32A097628001E154B /* CarePlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanViewController.swift; sourceTree = "<group>"; };
+		720803D52A09763E001E154B /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		720803D72A09893B001E154B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		726FB2532A01655E0077B990 /* LifeTomorrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTomorrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726FB2562A01655E0077B990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726FB2582A01655E0077B990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +50,10 @@
 		726FB2992A0440450077B990 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		726FB29B2A0440470077B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726FB29E2A0440470077B990 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8054E3BCA24B28CA0828A141 /* Pods_LifeTomorrowWatch_Watch_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTomorrowWatch_Watch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F050BE96B19FB7DCBB9A1770 /* Pods-LifeTomorrowWatch Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrowWatch Watch App.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrowWatch Watch App/Pods-LifeTomorrowWatch Watch App.release.xcconfig"; sourceTree = "<group>"; };
+		F05EEB6BC5026CF95BD8F1F7 /* Pods_LifeTomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7CF2C12119B738995BC659 /* Pods-LifeTomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrow.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrow/Pods-LifeTomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FCD8964650C086C25565D4 /* Pods_LifeTomorrow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FAA4C0EF2257624D050721 /* Pods_LifeTomorrowWatch_Watch_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +82,8 @@
 				726FB2552A01655E0077B990 /* LifeTomorrow */,
 				726FB2962A0440450077B990 /* LifeTomorrowWatch Watch App */,
 				726FB2542A01655E0077B990 /* Products */,
+				EA46BB04047BDCE9501DF3E9 /* Pods */,
+				958C05332C45ADEA864B1679 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,11 +99,13 @@
 		726FB2552A01655E0077B990 /* LifeTomorrow */ = {
 			isa = PBXGroup;
 			children = (
+				720803B22A09700E001E154B /* GoogleService-Info.plist */,
 				726FB2902A043D800077B990 /* LifeTomorrow.entitlements */,
 				726FB2562A01655E0077B990 /* AppDelegate.swift */,
 				726FB2582A01655E0077B990 /* SceneDelegate.swift */,
 				726FB2872A0424BB0077B990 /* NavigationController.swift */,
-				726FB2892A0426290077B990 /* Home */,
+				726FB25A2A01655E0077B990 /* HomeViewController.swift */,
+				726FB2892A0426290077B990 /* Smart Home */,
 				726FB28B2A04265F0077B990 /* Data Sharing & Profile */,
 				726FB28C2A0426730077B990 /* Care Plan */,
 				726FB28A2A0426430077B990 /* Health */,
@@ -91,17 +117,18 @@
 			path = LifeTomorrow;
 			sourceTree = "<group>";
 		};
-		726FB2892A0426290077B990 /* Home */ = {
+		726FB2892A0426290077B990 /* Smart Home */ = {
 			isa = PBXGroup;
 			children = (
-				726FB25A2A01655E0077B990 /* HomeViewController.swift */,
+				720803CF2A0975FE001E154B /* SmartHomeViewController.swift */,
 			);
-			path = Home;
+			path = "Smart Home";
 			sourceTree = "<group>";
 		};
 		726FB28A2A0426430077B990 /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				720803D52A09763E001E154B /* HealthViewController.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -109,6 +136,8 @@
 		726FB28B2A04265F0077B990 /* Data Sharing & Profile */ = {
 			isa = PBXGroup;
 			children = (
+				720803D12A097612001E154B /* DataSharingAndProfileViewController.swift */,
+				720803D72A09893B001E154B /* LoginViewController.swift */,
 			);
 			path = "Data Sharing & Profile";
 			sourceTree = "<group>";
@@ -116,6 +145,7 @@
 		726FB28C2A0426730077B990 /* Care Plan */ = {
 			isa = PBXGroup;
 			children = (
+				720803D32A097628001E154B /* CarePlanViewController.swift */,
 			);
 			path = "Care Plan";
 			sourceTree = "<group>";
@@ -146,6 +176,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		958C05332C45ADEA864B1679 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F05EEB6BC5026CF95BD8F1F7 /* Pods_LifeTomorrow.framework */,
+				8054E3BCA24B28CA0828A141 /* Pods_LifeTomorrowWatch_Watch_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA46BB04047BDCE9501DF3E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				362A91E15034892E84B8C3EB /* Pods-LifeTomorrow.debug.xcconfig */,
+				FD7CF2C12119B738995BC659 /* Pods-LifeTomorrow.release.xcconfig */,
+				6424845DDD27369552410ECD /* Pods-LifeTomorrowWatch Watch App.debug.xcconfig */,
+				F050BE96B19FB7DCBB9A1770 /* Pods-LifeTomorrowWatch Watch App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 726FB26A2A0165600077B990 /* Build configuration list for PBXNativeTarget "LifeTomorrow" */;
 			buildPhases = (
+				816D51B3CB28A73FE789CB76 /* [CP] Check Pods Manifest.lock */,
 				726FB24F2A01655E0077B990 /* Sources */,
 				726FB2502A01655E0077B990 /* Frameworks */,
 				726FB2512A01655E0077B990 /* Resources */,
+				F768B27E11AEC8C8A138641E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 726FB2A02A0440470077B990 /* Build configuration list for PBXNativeTarget "LifeTomorrowWatch Watch App" */;
 			buildPhases = (
+				5213F6E40E4657BA40B0B81C /* [CP] Check Pods Manifest.lock */,
 				726FB2912A0440450077B990 /* Sources */,
 				726FB2922A0440450077B990 /* Frameworks */,
 				726FB2932A0440450077B990 /* Resources */,
@@ -202,7 +255,7 @@
 				};
 			};
 			buildConfigurationList = 726FB24E2A01655E0077B990 /* Build configuration list for PBXProject "LifeTomorrow" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -226,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				726FB2632A0165600077B990 /* Assets.xcassets in Resources */,
+				720803B32A09700E001E154B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,16 +294,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5213F6E40E4657BA40B0B81C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LifeTomorrowWatch Watch App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		816D51B3CB28A73FE789CB76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LifeTomorrow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F768B27E11AEC8C8A138641E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeTomorrow/Pods-LifeTomorrow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeTomorrow/Pods-LifeTomorrow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifeTomorrow/Pods-LifeTomorrow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		726FB24F2A01655E0077B990 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				726FB25B2A01655E0077B990 /* HomeViewController.swift in Sources */,
+				720803D62A09763E001E154B /* HealthViewController.swift in Sources */,
 				726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */,
 				726FB2882A0424BB0077B990 /* NavigationController.swift in Sources */,
 				726FB2612A01655E0077B990 /* LifeTomorrow.xcdatamodeld in Sources */,
+				720803D42A097628001E154B /* CarePlanViewController.swift in Sources */,
 				726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */,
+				720803D22A097612001E154B /* DataSharingAndProfileViewController.swift in Sources */,
+				720803D82A09893B001E154B /* LoginViewController.swift in Sources */,
+				720803D02A0975FE001E154B /* SmartHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,13 +504,14 @@
 		};
 		726FB26B2A0165600077B990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362A91E15034892E84B8C3EB /* Pods-LifeTomorrow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LifeTomorrow/LifeTomorrow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 527WDPJ695;
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LifeTomorrow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -400,7 +524,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LifeTomorrow;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mit.LifeTomorrow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -413,13 +537,14 @@
 		};
 		726FB26C2A0165600077B990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD7CF2C12119B738995BC659 /* Pods-LifeTomorrow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LifeTomorrow/LifeTomorrow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 527WDPJ695;
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LifeTomorrow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -432,7 +557,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LifeTomorrow;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mit.LifeTomorrow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -445,13 +570,14 @@
 		};
 		726FB2A12A0440470077B990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6424845DDD27369552410ECD /* Pods-LifeTomorrowWatch Watch App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LifeTomorrowWatch Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 527WDPJ695;
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = LifeTomorrowWatch;
@@ -462,7 +588,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LifeTomorrowWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mit.LifeTomorrowWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -475,13 +601,14 @@
 		};
 		726FB2A22A0440470077B990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F050BE96B19FB7DCBB9A1770 /* Pods-LifeTomorrowWatch Watch App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LifeTomorrowWatch Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 527WDPJ695;
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = LifeTomorrowWatch;
@@ -492,7 +619,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MIT.AgeLab.LifeTomorrowWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mit.LifeTomorrowWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

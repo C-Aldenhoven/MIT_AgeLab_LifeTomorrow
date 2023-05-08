@@ -1,0 +1,6 @@
+framework module Pods_LifeTomorrow {
+  umbrella header "Pods-LifeTomorrow-umbrella.h"
+
+  export *
+  module * { export * }
+}
