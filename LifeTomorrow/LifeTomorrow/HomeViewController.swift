@@ -56,7 +56,7 @@ class HomeViewController: UIViewController {
             let taskViewController = ORKTaskViewController(task: ConsentTask, taskRun: nil)
             taskViewController.delegate = self
             present(taskViewController, animated: true, completion: nil)
-            UserDefaults.standard.set(true, forKey: "TermsAccepted")
+            UserDefaults.standard.set(true, forKey: "ConsentSigned")
         }
     }
     

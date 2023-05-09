@@ -1,4 +1,5 @@
 PODS:
+  - CareKit (1.2.1)
   - Firebase/Auth (10.9.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 10.9.0)
@@ -70,6 +71,7 @@ PODS:
   - ResearchKit (2.1.0)
 
 DEPENDENCIES:
+  - CareKit (~> 1.2)
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Storage
@@ -79,6 +81,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - CareKit
     - Firebase
     - FirebaseAppCheckInterop
     - FirebaseAuth
@@ -98,6 +101,7 @@ SPEC REPOS:
     - ResearchKit
 
 SPEC CHECKSUMS:
+  CareKit: aa0c8a57c1a2d7cfb46ff3981fe1503f02ca302e
   Firebase: bd152f0f3d278c4060c5c71359db08ebcfd5a3e2
   FirebaseAppCheckInterop: e69dde5cd51b88ee1b4339d6766b691272256f9b
   FirebaseAuth: 21d5e902fcea44d0d961540fc4742966ae6118cc
@@ -116,6 +120,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   ResearchKit: d7fba1d5b00f5dd299373e46727c5940fc5c1890
 
-PODFILE CHECKSUM: c7a879053da535dea6aff8fa738a834d56a8059c
+PODFILE CHECKSUM: 22b024422ace3d657d9b8a8eb350eee8f4f57c2c
 
 COCOAPODS: 1.11.2

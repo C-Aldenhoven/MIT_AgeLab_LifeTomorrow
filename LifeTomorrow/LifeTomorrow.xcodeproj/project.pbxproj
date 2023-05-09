@@ -17,10 +17,13 @@
 		720803D82A09893B001E154B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720803D72A09893B001E154B /* LoginViewController.swift */; };
 		720804CA2A0AD2C3001E154B /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720804C92A0AD2C3001E154B /* ConsentDocument.swift */; };
 		720804CC2A0AD76F001E154B /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720804CB2A0AD76F001E154B /* ConsentTask.swift */; };
+		720804CE2A0AF509001E154B /* CarePlanStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720804CD2A0AF509001E154B /* CarePlanStorageManager.swift */; };
+		720805062A0AFA99001E154B /* NSDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720805052A0AFA99001E154B /* NSDateComponents.swift */; };
+		720805082A0AFAAC001E154B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720805072A0AFAAC001E154B /* UIColor.swift */; };
+		7208050A2A0AFAD1001E154B /* DataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720805092A0AFAD1001E154B /* DataHelpers.swift */; };
 		726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2562A01655E0077B990 /* AppDelegate.swift */; };
 		726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2582A01655E0077B990 /* SceneDelegate.swift */; };
 		726FB25B2A01655E0077B990 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB25A2A01655E0077B990 /* HomeViewController.swift */; };
-		726FB2612A01655E0077B990 /* LifeTomorrow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 726FB25F2A01655E0077B990 /* LifeTomorrow.xcdatamodeld */; };
 		726FB2632A0165600077B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB2622A0165600077B990 /* Assets.xcassets */; };
 		726FB2882A0424BB0077B990 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2872A0424BB0077B990 /* NavigationController.swift */; };
 		726FB2982A0440450077B990 /* LifeTomorrowWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2972A0440450077B990 /* LifeTomorrowWatchApp.swift */; };
@@ -41,11 +44,14 @@
 		720804C62A0ACF1B001E154B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		720804C92A0AD2C3001E154B /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		720804CB2A0AD76F001E154B /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		720804CD2A0AF509001E154B /* CarePlanStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanStorageManager.swift; sourceTree = "<group>"; };
+		720805052A0AFA99001E154B /* NSDateComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateComponents.swift; sourceTree = "<group>"; };
+		720805072A0AFAAC001E154B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		720805092A0AFAD1001E154B /* DataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelpers.swift; sourceTree = "<group>"; };
 		726FB2532A01655E0077B990 /* LifeTomorrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTomorrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726FB2562A01655E0077B990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726FB2582A01655E0077B990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		726FB25A2A01655E0077B990 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		726FB2602A01655E0077B990 /* LifeTomorrow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifeTomorrow.xcdatamodel; sourceTree = "<group>"; };
 		726FB2622A0165600077B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726FB2672A0165600077B990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		726FB2872A0424BB0077B990 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,16 @@
 			path = "Study Supplements";
 			sourceTree = "<group>";
 		};
+		720805042A0AFA7B001E154B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				720805052A0AFA99001E154B /* NSDateComponents.swift */,
+				720805072A0AFAAC001E154B /* UIColor.swift */,
+				720805092A0AFAD1001E154B /* DataHelpers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		726FB24A2A01655E0077B990 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +143,6 @@
 				726FB28D2A0426C90077B990 /* Emergency */,
 				726FB2622A0165600077B990 /* Assets.xcassets */,
 				726FB2672A0165600077B990 /* Info.plist */,
-				726FB25F2A01655E0077B990 /* LifeTomorrow.xcdatamodeld */,
 			);
 			path = LifeTomorrow;
 			sourceTree = "<group>";
@@ -160,7 +175,9 @@
 		726FB28C2A0426730077B990 /* Care Plan */ = {
 			isa = PBXGroup;
 			children = (
+				720805042A0AFA7B001E154B /* Utilities */,
 				720803D32A097628001E154B /* CarePlanViewController.swift */,
+				720804CD2A0AF509001E154B /* CarePlanStorageManager.swift */,
 			);
 			path = "Care Plan";
 			sourceTree = "<group>";
@@ -380,14 +397,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				726FB25B2A01655E0077B990 /* HomeViewController.swift in Sources */,
+				720805082A0AFAAC001E154B /* UIColor.swift in Sources */,
 				720803D62A09763E001E154B /* HealthViewController.swift in Sources */,
 				726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */,
 				726FB2882A0424BB0077B990 /* NavigationController.swift in Sources */,
-				726FB2612A01655E0077B990 /* LifeTomorrow.xcdatamodeld in Sources */,
 				720803D42A097628001E154B /* CarePlanViewController.swift in Sources */,
 				726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */,
+				7208050A2A0AFAD1001E154B /* DataHelpers.swift in Sources */,
 				720803D22A097612001E154B /* DataSharingAndProfileViewController.swift in Sources */,
+				720805062A0AFA99001E154B /* NSDateComponents.swift in Sources */,
 				720803D82A09893B001E154B /* LoginViewController.swift in Sources */,
+				720804CE2A0AF509001E154B /* CarePlanStorageManager.swift in Sources */,
 				720804CC2A0AD76F001E154B /* ConsentTask.swift in Sources */,
 				720803D02A0975FE001E154B /* SmartHomeViewController.swift in Sources */,
 				720804CA2A0AD2C3001E154B /* ConsentDocument.swift in Sources */,
@@ -679,19 +699,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		726FB25F2A01655E0077B990 /* LifeTomorrow.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				726FB2602A01655E0077B990 /* LifeTomorrow.xcdatamodel */,
-			);
-			currentVersion = 726FB2602A01655E0077B990 /* LifeTomorrow.xcdatamodel */;
-			path = LifeTomorrow.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 726FB24B2A01655E0077B990 /* Project object */;
 }
