@@ -12,6 +12,7 @@ import CareKit
 class CarePlanViewController: UIViewController {
     
     fileprivate let carePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+    fileprivate let carePlanData = CarePlanData(carePlanStore: CarePlanStoreManager.sharedCarePlanStoreManager.store)
     
     override func viewDidLoad() {
         super.viewDidLoad()
