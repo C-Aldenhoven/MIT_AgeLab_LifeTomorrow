@@ -11,6 +11,7 @@ target 'LifeTomorrow' do
   pod 'Firebase/Auth'
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Email'
+  pod 'ResearchKit', '~> 2.1'
 
 end
 

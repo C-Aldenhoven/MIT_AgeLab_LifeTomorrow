@@ -15,6 +15,8 @@
 		720803D42A097628001E154B /* CarePlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720803D32A097628001E154B /* CarePlanViewController.swift */; };
 		720803D62A09763E001E154B /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720803D52A09763E001E154B /* HealthViewController.swift */; };
 		720803D82A09893B001E154B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720803D72A09893B001E154B /* LoginViewController.swift */; };
+		720804CA2A0AD2C3001E154B /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720804C92A0AD2C3001E154B /* ConsentDocument.swift */; };
+		720804CC2A0AD76F001E154B /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720804CB2A0AD76F001E154B /* ConsentTask.swift */; };
 		726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2562A01655E0077B990 /* AppDelegate.swift */; };
 		726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2582A01655E0077B990 /* SceneDelegate.swift */; };
 		726FB25B2A01655E0077B990 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB25A2A01655E0077B990 /* HomeViewController.swift */; };
@@ -36,6 +38,9 @@
 		720803D32A097628001E154B /* CarePlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanViewController.swift; sourceTree = "<group>"; };
 		720803D52A09763E001E154B /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		720803D72A09893B001E154B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		720804C62A0ACF1B001E154B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		720804C92A0AD2C3001E154B /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		720804CB2A0AD76F001E154B /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		726FB2532A01655E0077B990 /* LifeTomorrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTomorrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726FB2562A01655E0077B990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726FB2582A01655E0077B990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720804C82A0AD28B001E154B /* Study Supplements */ = {
+			isa = PBXGroup;
+			children = (
+				720804C92A0AD2C3001E154B /* ConsentDocument.swift */,
+				720804CB2A0AD76F001E154B /* ConsentTask.swift */,
+			);
+			path = "Study Supplements";
+			sourceTree = "<group>";
+		};
 		726FB24A2A01655E0077B990 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +113,7 @@
 		726FB2552A01655E0077B990 /* LifeTomorrow */ = {
 			isa = PBXGroup;
 			children = (
+				720804C82A0AD28B001E154B /* Study Supplements */,
 				720803B22A09700E001E154B /* GoogleService-Info.plist */,
 				726FB2902A043D800077B990 /* LifeTomorrow.entitlements */,
 				726FB2562A01655E0077B990 /* AppDelegate.swift */,
@@ -179,6 +194,7 @@
 		958C05332C45ADEA864B1679 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				720804C62A0ACF1B001E154B /* HealthKit.framework */,
 				F05EEB6BC5026CF95BD8F1F7 /* Pods_LifeTomorrow.framework */,
 				8054E3BCA24B28CA0828A141 /* Pods_LifeTomorrowWatch_Watch_App.framework */,
 			);
@@ -372,7 +388,9 @@
 				726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */,
 				720803D22A097612001E154B /* DataSharingAndProfileViewController.swift in Sources */,
 				720803D82A09893B001E154B /* LoginViewController.swift in Sources */,
+				720804CC2A0AD76F001E154B /* ConsentTask.swift in Sources */,
 				720803D02A0975FE001E154B /* SmartHomeViewController.swift in Sources */,
+				720804CA2A0AD2C3001E154B /* ConsentDocument.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +549,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -564,7 +582,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
