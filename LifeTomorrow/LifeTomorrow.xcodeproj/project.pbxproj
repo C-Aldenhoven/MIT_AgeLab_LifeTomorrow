@@ -22,6 +22,7 @@
 		720805082A0AFAAC001E154B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720805072A0AFAAC001E154B /* UIColor.swift */; };
 		7208050A2A0AFAD1001E154B /* DataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720805092A0AFAD1001E154B /* DataHelpers.swift */; };
 		7208050D2A0B026F001E154B /* CarePlanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7208050C2A0B026F001E154B /* CarePlanData.swift */; };
+		7208050F2A0BFC8D001E154B /* AsessmentTaskFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7208050E2A0BFC8D001E154B /* AsessmentTaskFactory.swift */; };
 		726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2562A01655E0077B990 /* AppDelegate.swift */; };
 		726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2582A01655E0077B990 /* SceneDelegate.swift */; };
 		726FB25B2A01655E0077B990 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB25A2A01655E0077B990 /* HomeViewController.swift */; };
@@ -50,6 +51,7 @@
 		720805072A0AFAAC001E154B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		720805092A0AFAD1001E154B /* DataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelpers.swift; sourceTree = "<group>"; };
 		7208050C2A0B026F001E154B /* CarePlanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanData.swift; sourceTree = "<group>"; };
+		7208050E2A0BFC8D001E154B /* AsessmentTaskFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsessmentTaskFactory.swift; sourceTree = "<group>"; };
 		726FB2532A01655E0077B990 /* LifeTomorrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTomorrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726FB2562A01655E0077B990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726FB2582A01655E0077B990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				720804CD2A0AF509001E154B /* CarePlanStorageManager.swift */,
 				7208050C2A0B026F001E154B /* CarePlanData.swift */,
+				7208050E2A0BFC8D001E154B /* AsessmentTaskFactory.swift */,
 			);
 			path = "Care Plan Storage";
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				720803D62A09763E001E154B /* HealthViewController.swift in Sources */,
 				726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */,
 				726FB2882A0424BB0077B990 /* NavigationController.swift in Sources */,
+				7208050F2A0BFC8D001E154B /* AsessmentTaskFactory.swift in Sources */,
 				720803D42A097628001E154B /* CarePlanViewController.swift in Sources */,
 				726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */,
 				7208050A2A0AFAD1001E154B /* DataHelpers.swift in Sources */,

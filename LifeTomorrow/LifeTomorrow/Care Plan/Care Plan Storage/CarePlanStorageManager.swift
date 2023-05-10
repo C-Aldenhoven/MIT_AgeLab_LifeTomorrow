@@ -29,6 +29,7 @@
 
 import Foundation
 import CareKit
+import ResearchKit
 
 class CarePlanStoreManager: NSObject {
     static let sharedCarePlanStoreManager = CarePlanStoreManager()
@@ -51,4 +52,19 @@ class CarePlanStoreManager: NSObject {
         
         super.init()
     }
+    
+    func buildCarePlanResultFrom(taskResult: ORKTaskResult) -> OCKCarePlanEventResult {
+      guard let firstResult = taskResult.firstResult as? ORKStepResult,
+        let stepResult = firstResult.results?.first else {
+          fatalError("Unexepected task results")
+      }
+      
+      if let numericResult = stepResult as? ORKNumericQuestionResult,
+        let answer = numericResult.numericAnswer {
+        return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: numericResult.unit, userInfo: nil)
+      }
+      
+      fatalError("Unexpected task result type")
+    }
+
 }

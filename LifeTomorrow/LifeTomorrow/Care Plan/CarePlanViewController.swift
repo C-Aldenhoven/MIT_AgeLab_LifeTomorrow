@@ -13,6 +13,7 @@ class CarePlanViewController: UIViewController {
     
     fileprivate let carePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
     fileprivate let carePlanData = CarePlanData(carePlanStore: CarePlanStoreManager.sharedCarePlanStoreManager.store)
+    fileprivate var symptomTrackerViewController: OCKSymptomTrackerViewController? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,7 +138,10 @@ class CarePlanViewController: UIViewController {
     }
     
     @objc private func symptomTrackerButtonAction() {
-        navigationController?.pushViewController(UIViewController(), animated: true)
+        let viewController = OCKSymptomTrackerViewController(carePlanStore: carePlanStoreManager.store)
+        viewController.delegate = self
+        symptomTrackerViewController = viewController
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     @objc private func insightsButtonAction() {
@@ -148,3 +152,40 @@ class CarePlanViewController: UIViewController {
         navigationController?.pushViewController(UIViewController(), animated: true)
     }
 }
+
+// MARK: - OCKSymptomTrackerViewControllerDelegate
+extension CarePlanViewController: OCKSymptomTrackerViewControllerDelegate {
+  func symptomTrackerViewController(_ viewController: OCKSymptomTrackerViewController,
+                                    didSelectRowWithAssessmentEvent assessmentEvent: OCKCarePlanEvent) {
+    guard let userInfo = assessmentEvent.activity.userInfo,
+      let task: ORKTask = userInfo["ORKTask"] as? ORKTask else { return }
+    
+    let taskViewController = ORKTaskViewController(task: task, taskRun: nil)
+    taskViewController.delegate = self
+    
+    present(taskViewController, animated: true, completion: nil)
+  }
+}
+
+// MARK: - ORKTaskViewControllerDelegate
+extension CarePlanViewController: ORKTaskViewControllerDelegate {
+  func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith
+    reason: ORKTaskViewControllerFinishReason, error: Error?) {
+      
+    defer {
+      dismiss(animated: true, completion: nil)
+    }
+    
+    guard reason == .completed else { return }
+    guard let symptomTrackerViewController = symptomTrackerViewController,
+      let event = symptomTrackerViewController.lastSelectedAssessmentEvent else { return }
+      let carePlanResult = carePlanStoreManager.buildCarePlanResultFrom(taskResult: taskViewController.result)
+      carePlanStoreManager.store.update(event, with: carePlanResult, state: .completed) {
+        success, _, error in
+        if !success {
+          print(error?.localizedDescription)
+        }
+      }
+  }
+}
+

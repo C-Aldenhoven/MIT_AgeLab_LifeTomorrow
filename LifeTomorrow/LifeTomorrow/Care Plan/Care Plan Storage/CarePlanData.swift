@@ -27,6 +27,8 @@ class CarePlanData: NSObject {
     init(carePlanStore: OCKCarePlanStore) {
         self.carePlanStore = carePlanStore
     
+        // Care Card Activities
+        
         let cardioActivity = OCKCarePlanActivity(
           identifier: ActivityIdentifier.cardio.rawValue,
           groupIdentifier: nil,
@@ -65,13 +67,32 @@ class CarePlanData: NSObject {
           schedule: CarePlanData.dailyScheduleRepeating(occurencesPerDay: 2),
           resultResettable: true,
           userInfo: nil)
-
+        
+        // Assessment activities
     
-        //TODO: Define assessment activities
+        let pulseActivity = OCKCarePlanActivity
+          .assessment(withIdentifier: ActivityIdentifier.pulse.rawValue,
+                                    groupIdentifier: nil,
+                                    title: "Pulse",
+                                    text: "Do you have one?",
+                                    tintColor: UIColor.darkGreen(),
+                                    resultResettable: true,
+                                    schedule: CarePlanData.dailyScheduleRepeating(occurencesPerDay: 1),
+                      userInfo: ["ORKTask": AssessmentTaskFactory.makePulseAssessmentTask()], optional: false)
+
+        let temperatureActivity = OCKCarePlanActivity
+          .assessment(withIdentifier: ActivityIdentifier.temperature.rawValue,
+                                    groupIdentifier: nil,
+                                    title: "Temperature",
+                                    text: "Oral",
+                                    tintColor: UIColor.darkYellow(),
+                                    resultResettable: true,
+                                    schedule: CarePlanData.dailyScheduleRepeating(occurencesPerDay: 1),
+                      userInfo: ["ORKTask": AssessmentTaskFactory.makeTemperatureAssessmentTask()], optional: false)
     
         super.init()
     
-        for activity in [cardioActivity, limberUpActivity, targetPracticeActivity] {
+        for activity in [cardioActivity, limberUpActivity, targetPracticeActivity, pulseActivity, temperatureActivity] {
                           add(activity: activity)
         }
 
