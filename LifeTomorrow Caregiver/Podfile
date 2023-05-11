@@ -20,4 +20,7 @@ target 'LifeTomorrow Caregiver' do
   pod 'Alamofire'
   pod 'Kingfisher'
 
+  pod 'ResearchKit', '~> 2.1'
+  pod 'CareKit', '~> 1.2'
+
 end

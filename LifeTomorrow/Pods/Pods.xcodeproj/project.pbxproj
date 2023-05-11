@@ -992,7 +992,7 @@
 		71ED3916A8324BDB39E2329E5AFDC717 /* ORKDiscreteGraphChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 903F0D6FDC26593EC853E12E2935012E /* ORKDiscreteGraphChartView.m */; };
 		72015C30396A9C25BD607EE7BD61192C /* FIRAuthDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE7EEBE2A83D68B586E4E101E0D6C84 /* FIRAuthDispatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7215103803F61CD2C780D9FD7F568AC0 /* ORKPedometerRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3C71B44EAD5A1780BDDBC37092670A /* ORKPedometerRecorder.m */; };
-		72371E318E260F55A0ECEAB35E0F239B /* FirebaseEmailAuthUI-FirebaseEmailAuthUI in Resources */ = {isa = PBXBuildFile; fileRef = 6865268DF19F11F35B4B7BE165CADA55 /* FirebaseEmailAuthUI-FirebaseEmailAuthUI */; };
+		72371E318E260F55A0ECEAB35E0F239B /* FirebaseEmailAuthUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6865268DF19F11F35B4B7BE165CADA55 /* FirebaseEmailAuthUI.bundle */; };
 		724AF7D5A0849FCF5FD78FE8811CDFC0 /* OCKPatientWidgetView.h in Headers */ = {isa = PBXBuildFile; fileRef = B39EE3BD9749C7B166FED764ED38E53F /* OCKPatientWidgetView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		72577BE36FA57345ADF7EF4BE8D75C2A /* ORKAnswerTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 5307A062BCE8A637152AFEA0CCCA4CAC /* ORKAnswerTextField.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		726F1B1D25707E8DED77D68CC02F10EF /* bn.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7836716EF35479FED3454CFD8464F575 /* bn.lproj */; };
@@ -2147,7 +2147,7 @@
 		FDB0B0FED239E661E33F77E68A06F540 /* FBLPromisePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 283049DF652F13A46689B7B9837928B7 /* FBLPromisePrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FDC6F7684FE52BC8913E363FACA3746D /* ORKHeadlineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE824D22DDBEAE0ED4F2C7421BDF172 /* ORKHeadlineLabel.m */; };
 		FDC7CB5BD8C51AB2B9714B56EB7A8D99 /* FOperationSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D0008787863E6A56C568644A3DD3AC50 /* FOperationSource.m */; };
-		FE33488019FA2DCE3DA88919D1946F8C /* FirebaseAuthUI-FirebaseAuthUI in Resources */ = {isa = PBXBuildFile; fileRef = 8AF09534750C277E2923B095C4FB6CA3 /* FirebaseAuthUI-FirebaseAuthUI */; };
+		FE33488019FA2DCE3DA88919D1946F8C /* FirebaseAuthUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8AF09534750C277E2923B095C4FB6CA3 /* FirebaseAuthUI.bundle */; };
 		FE5B9D2668154DE6F8CC68C22711F12A /* FRepo_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ABD50421188AA959DF0B0614C4B2372 /* FRepo_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FE6B4D144DCF62F5F47B5B4B8DDD5A5B /* fr-CH.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D965C538689807587A9010AB797839A9 /* fr-CH.lproj */; };
 		FE800998B11FF507A429FAE1FCD0714D /* ORKSpatialSpanTargetView.h in Headers */ = {isa = PBXBuildFile; fileRef = FA104F69BE17A9C285D962E4E6BF0383 /* ORKSpatialSpanTargetView.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -3431,7 +3431,7 @@
 		682A8A1AFD6042CD83A9224D24FA8E74 /* FirebaseCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseCore-umbrella.h"; sourceTree = "<group>"; };
 		685A1FACD03615CEE46E6F3F6DFCB45C /* ORKTouchAbilityPinchGuideView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKTouchAbilityPinchGuideView.h; path = ResearchKit/ActiveTasks/ORKTouchAbilityPinchGuideView.h; sourceTree = "<group>"; };
 		685ED1EE4A320AB53361922251CF4530 /* FirebaseUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseUI.debug.xcconfig; sourceTree = "<group>"; };
-		6865268DF19F11F35B4B7BE165CADA55 /* FirebaseEmailAuthUI-FirebaseEmailAuthUI */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "FirebaseEmailAuthUI-FirebaseEmailAuthUI"; path = FirebaseEmailAuthUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6865268DF19F11F35B4B7BE165CADA55 /* FirebaseEmailAuthUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseEmailAuthUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		68832DDFC1E58AAB87A26AE161543551 /* FWriteRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FWriteRecord.m; path = FirebaseDatabase/Sources/Core/FWriteRecord.m; sourceTree = "<group>"; };
 		688FB4A2447BFE1D850A073C7995286B /* FIRGetAccountInfoResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRGetAccountInfoResponse.m; path = FirebaseAuth/Sources/Backend/RPC/FIRGetAccountInfoResponse.m; sourceTree = "<group>"; };
 		68C6E9EE53DFB54ABF36C94ED175D1DF /* FUIAccountSettingsOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FUIAccountSettingsOperation.m; path = FirebaseAuthUI/Sources/FUIAccountSettingsOperation.m; sourceTree = "<group>"; };
@@ -3737,7 +3737,7 @@
 		8ABD50421188AA959DF0B0614C4B2372 /* FRepo_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FRepo_Private.h; path = FirebaseDatabase/Sources/Core/FRepo_Private.h; sourceTree = "<group>"; };
 		8AD347DA9D5AD23D35854568892FF739 /* FUIPasswordSignUpViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FUIPasswordSignUpViewController.xib; path = FirebaseEmailAuthUI/Sources/Resources/FUIPasswordSignUpViewController.xib; sourceTree = "<group>"; };
 		8ADBCBD3F2920CC3C111893BD1EDE4CA /* ORKSpeechRecognitionStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKSpeechRecognitionStep.m; path = ResearchKit/ActiveTasks/ORKSpeechRecognitionStep.m; sourceTree = "<group>"; };
-		8AF09534750C277E2923B095C4FB6CA3 /* FirebaseAuthUI-FirebaseAuthUI */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "FirebaseAuthUI-FirebaseAuthUI"; path = FirebaseAuthUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF09534750C277E2923B095C4FB6CA3 /* FirebaseAuthUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseAuthUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B033D62C568ACDF4F81177205E936AB /* FirebaseAppCheckInterop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseAppCheckInterop.modulemap; sourceTree = "<group>"; };
 		8B21BCBB0E6495C904AEBEFBC80E94A5 /* ORKHealthClinicalTypeRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKHealthClinicalTypeRecorder.h; path = ResearchKit/ActiveTasks/ORKHealthClinicalTypeRecorder.h; sourceTree = "<group>"; };
 		8B78C868F4FF19CA2CFD4E45D0ACF4BB /* ORKCustomStepView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORKCustomStepView.m; path = ResearchKit/Common/ORKCustomStepView.m; sourceTree = "<group>"; };
@@ -4452,7 +4452,7 @@
 		E13F7C891E86464D75486056940515A8 /* ORKRingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKRingView.h; path = ResearchKit/Common/ORKRingView.h; sourceTree = "<group>"; };
 		E16C0198E599EAABE5861080C8D74821 /* zh_CN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = zh_CN.lproj; path = CareKit/Localization/zh_CN.lproj; sourceTree = "<group>"; };
 		E17929DAAD19DC7DADE0A7A689775416 /* ORKSeparatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKSeparatorView.h; path = ResearchKit/Common/ORKSeparatorView.h; sourceTree = "<group>"; };
-		E1885D83985AF89572FD13F8E79B9F6B /* ResearchKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ResearchKit; path = ResearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1885D83985AF89572FD13F8E79B9F6B /* ResearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ResearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A927DFB171C7EF23719BC8E1F08080 /* consent_06@3x.m4v */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "consent_06@3x.m4v"; path = "ResearchKit/Animations/phone@3x/consent_06@3x.m4v"; sourceTree = "<group>"; };
 		E1B1FBABFAC8D3FC82054981AD963BB4 /* ORKdBHLToneAudiometryStepViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORKdBHLToneAudiometryStepViewController.h; path = ResearchKit/ActiveTasks/ORKdBHLToneAudiometryStepViewController.h; sourceTree = "<group>"; };
 		E1D812EE6FB86A56E00B218A4BEE5C6E /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Sources/Core/Public/GTMSessionFetcher/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
@@ -5701,13 +5701,13 @@
 				43B1E4CD7B30B9FD278100133C2AC788 /* FirebaseAuth */,
 				09D8B108F8926BC5DC78684FF235123E /* FirebaseAuthInterop */,
 				5C912DF5F9977AB93E24E13047C79554 /* FirebaseAuthUI */,
-				8AF09534750C277E2923B095C4FB6CA3 /* FirebaseAuthUI-FirebaseAuthUI */,
+				8AF09534750C277E2923B095C4FB6CA3 /* FirebaseAuthUI.bundle */,
 				E2B63D462DB7F827C4B11FD51E4F8E2D /* FirebaseCore */,
 				AEF1DC80F0EB62580B81D18786BAF924 /* FirebaseCoreExtension */,
 				148D0F9E8C7373FEAF40D800FC5F1BAA /* FirebaseCoreInternal */,
 				51671C73F008B5C0C3751B3855999213 /* FirebaseDatabase */,
 				F30027B286FA57FB117892D430A97B39 /* FirebaseEmailAuthUI */,
-				6865268DF19F11F35B4B7BE165CADA55 /* FirebaseEmailAuthUI-FirebaseEmailAuthUI */,
+				6865268DF19F11F35B4B7BE165CADA55 /* FirebaseEmailAuthUI.bundle */,
 				9CF8FA5F01F446F01AAC7331075452AD /* FirebaseStorage */,
 				B43874C6CBB50E7134FBEC24BABFE14F /* GoogleUtilities */,
 				C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher */,
@@ -5715,7 +5715,7 @@
 				EE386FC89261E385D55BABB14FEB1E0F /* Pods-LifeTomorrow */,
 				25D1B39C25B6EA1579D2189CD208E531 /* Pods-LifeTomorrowWatch Watch App */,
 				3347A1AB6546F0A3977529B8F199DC41 /* PromisesObjC */,
-				E1885D83985AF89572FD13F8E79B9F6B /* ResearchKit */,
+				E1885D83985AF89572FD13F8E79B9F6B /* ResearchKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -8776,7 +8776,7 @@
 			);
 			name = ResearchKit;
 			productName = ResearchKit;
-			productReference = E1885D83985AF89572FD13F8E79B9F6B /* ResearchKit */;
+			productReference = E1885D83985AF89572FD13F8E79B9F6B /* ResearchKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		23E7C4A52360C026F97E4A96D91B03CE /* FirebaseStorage */ = {
@@ -9065,7 +9065,7 @@
 			);
 			name = "FirebaseEmailAuthUI-FirebaseEmailAuthUI";
 			productName = FirebaseEmailAuthUI;
-			productReference = 6865268DF19F11F35B4B7BE165CADA55 /* FirebaseEmailAuthUI-FirebaseEmailAuthUI */;
+			productReference = 6865268DF19F11F35B4B7BE165CADA55 /* FirebaseEmailAuthUI.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */ = {
@@ -9158,7 +9158,7 @@
 			);
 			name = "FirebaseAuthUI-FirebaseAuthUI";
 			productName = FirebaseAuthUI;
-			productReference = 8AF09534750C277E2923B095C4FB6CA3 /* FirebaseAuthUI-FirebaseAuthUI */;
+			productReference = 8AF09534750C277E2923B095C4FB6CA3 /* FirebaseAuthUI.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -9499,7 +9499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72371E318E260F55A0ECEAB35E0F239B /* FirebaseEmailAuthUI-FirebaseEmailAuthUI in Resources */,
+				72371E318E260F55A0ECEAB35E0F239B /* FirebaseEmailAuthUI.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9514,7 +9514,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE33488019FA2DCE3DA88919D1946F8C /* FirebaseAuthUI-FirebaseAuthUI in Resources */,
+				FE33488019FA2DCE3DA88919D1946F8C /* FirebaseAuthUI.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -10960,11 +10960,11 @@
 			baseConfigurationReference = 5D579FDFDDD02F1E7D0012F9CBBF664E /* ResearchKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -10980,6 +10980,7 @@
 				MODULEMAP_FILE = "Target Support Files/ResearchKit/ResearchKit.modulemap";
 				PRODUCT_MODULE_NAME = ResearchKit;
 				PRODUCT_NAME = ResearchKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -10996,6 +10997,7 @@
 			baseConfigurationReference = B7825E4158925D77BB12613923FBE7E6 /* FirebaseAuthUI.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FirebaseAuthUI";
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				IBSC_MODULE = FirebaseAuthUI;
 				INFOPLIST_FILE = "Target Support Files/FirebaseAuthUI/ResourceBundle-FirebaseAuthUI-FirebaseAuthUI-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -11011,11 +11013,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 831E11B357A206DA32BFF4916C7DC681 /* CareKit.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -11031,6 +11033,7 @@
 				MODULEMAP_FILE = "Target Support Files/CareKit/CareKit.modulemap";
 				PRODUCT_MODULE_NAME = CareKit;
 				PRODUCT_NAME = CareKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -11081,6 +11084,7 @@
 			baseConfigurationReference = D7D0554BB7735DAA50450D962D300233 /* FirebaseAuthUI.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FirebaseAuthUI";
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				IBSC_MODULE = FirebaseAuthUI;
 				INFOPLIST_FILE = "Target Support Files/FirebaseAuthUI/ResourceBundle-FirebaseAuthUI-FirebaseAuthUI-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -11202,6 +11206,7 @@
 			baseConfigurationReference = C40EEB6A47D71D65F69F70D8B54F802F /* FirebaseEmailAuthUI.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FirebaseEmailAuthUI";
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				IBSC_MODULE = FirebaseEmailAuthUI;
 				INFOPLIST_FILE = "Target Support Files/FirebaseEmailAuthUI/ResourceBundle-FirebaseEmailAuthUI-FirebaseEmailAuthUI-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -11637,11 +11642,11 @@
 			baseConfigurationReference = 31ABCFE882392A7140197891451623ED /* ResearchKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -11657,6 +11662,7 @@
 				MODULEMAP_FILE = "Target Support Files/ResearchKit/ResearchKit.modulemap";
 				PRODUCT_MODULE_NAME = ResearchKit;
 				PRODUCT_NAME = ResearchKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -11759,11 +11765,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E54328800966AFCE72A731565042DB18 /* CareKit.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -11779,6 +11785,7 @@
 				MODULEMAP_FILE = "Target Support Files/CareKit/CareKit.modulemap";
 				PRODUCT_MODULE_NAME = CareKit;
 				PRODUCT_NAME = CareKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -12438,6 +12445,7 @@
 			baseConfigurationReference = 4DCF49B965B87E784E0A1F4E04E566DD /* FirebaseEmailAuthUI.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FirebaseEmailAuthUI";
+				DEVELOPMENT_TEAM = A35W4MM59Y;
 				IBSC_MODULE = FirebaseEmailAuthUI;
 				INFOPLIST_FILE = "Target Support Files/FirebaseEmailAuthUI/ResourceBundle-FirebaseEmailAuthUI-FirebaseEmailAuthUI-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

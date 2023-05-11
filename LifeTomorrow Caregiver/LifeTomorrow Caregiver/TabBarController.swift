@@ -49,6 +49,8 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         
         let controllers = [chatTab, finderTab, homeTab, infoTab, caregivingTab]  //array of the root view controllers displayed by the tab bar interface
         self.viewControllers = controllers
+        
+        self.selectedIndex = 2
     }
 
     //Delegate methods

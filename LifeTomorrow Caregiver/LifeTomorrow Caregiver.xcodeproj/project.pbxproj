@@ -114,6 +114,8 @@
 		726FB23E2A0164DD0077B990 /* LifeTomorrow_Caregiver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 726FB23C2A0164DD0077B990 /* LifeTomorrow_Caregiver.xcdatamodeld */; };
 		726FB2402A0164E00077B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB23F2A0164E00077B990 /* Assets.xcassets */; };
 		726FB2432A0164E00077B990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726FB2412A0164E00077B990 /* LaunchScreen.storyboard */; };
+		72AA7EC42A0D5EA800524337 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */; };
+		72AA7EC62A0D5ECB00524337 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */; };
 		8DC4D8CFAAD44B2089F284E0 /* Pods_LifeTomorrow_Caregiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F703EB45945D0C1289B3C9C8 /* Pods_LifeTomorrow_Caregiver.framework */; };
 /* End PBXBuildFile section */
 
@@ -228,6 +230,8 @@
 		726FB23F2A0164E00077B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726FB2422A0164E00077B990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726FB2442A0164E00077B990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		7DD72A7872F6DA811A0D8A91 /* Pods-LifeTomorrow Caregiver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrow Caregiver.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrow Caregiver/Pods-LifeTomorrow Caregiver.release.xcconfig"; sourceTree = "<group>"; };
 		F703EB45945D0C1289B3C9C8 /* Pods_LifeTomorrow_Caregiver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTomorrow_Caregiver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE236279169736667739C8A7 /* Pods-LifeTomorrow Caregiver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrow Caregiver.debug.xcconfig"; path = "Target Support Files/Pods-LifeTomorrow Caregiver/Pods-LifeTomorrow Caregiver.debug.xcconfig"; sourceTree = "<group>"; };
@@ -585,6 +589,7 @@
 		726FB2322A0164DD0077B990 /* LifeTomorrow Caregiver */ = {
 			isa = PBXGroup;
 			children = (
+				72AA7EC22A0D5E7D00524337 /* Study Supplements */,
 				720804B42A0AC3FB001E154B /* Chat */,
 				720804B82A0AC454001E154B /* Caregiving */,
 				720804B72A0AC44D001E154B /* Info */,
@@ -602,6 +607,15 @@
 				726FB23C2A0164DD0077B990 /* LifeTomorrow_Caregiver.xcdatamodeld */,
 			);
 			path = "LifeTomorrow Caregiver";
+			sourceTree = "<group>";
+		};
+		72AA7EC22A0D5E7D00524337 /* Study Supplements */ = {
+			isa = PBXGroup;
+			children = (
+				72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */,
+				72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */,
+			);
+			path = "Study Supplements";
 			sourceTree = "<group>";
 		};
 		9A982960992E7A2A8F8576D0 /* Pods */ = {
@@ -799,6 +813,7 @@
 				720804C42A0AC50B001E154B /* FinderViewController.swift in Sources */,
 				7208049C2A09B2F0001E154B /* Typealiases.swift in Sources */,
 				7208048F2A09B2F0001E154B /* ConstraintViewDSL.swift in Sources */,
+				72AA7EC62A0D5ECB00524337 /* ConsentTask.swift in Sources */,
 				7208049B2A09B2F0001E154B /* ConstraintLayoutSupport.swift in Sources */,
 				720804512A09B2F0001E154B /* ATCChatUserStoryAdapter.swift in Sources */,
 				720804A22A09B2F1001E154B /* ConstraintLayoutGuideDSL.swift in Sources */,
@@ -815,6 +830,7 @@
 				720804A62A09B2F1001E154B /* Debugging.swift in Sources */,
 				720804672A09B2F0001E154B /* ATCCarouselAdapter.swift in Sources */,
 				720804AA2A09B2F1001E154B /* ConstraintLayoutSupportDSL.swift in Sources */,
+				72AA7EC42A0D5EA800524337 /* ConsentDocument.swift in Sources */,
 				7208047E2A09B2F0001E154B /* ATCMessengerUserAdapter.swift in Sources */,
 				720804A42A09B2F1001E154B /* ConstraintItem.swift in Sources */,
 				720804902A09B2F0001E154B /* ConstraintPriorityTarget.swift in Sources */,
