@@ -23,27 +23,27 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         let caregivingNavigationController = NavigationController()
                 
         let chatTab = chatNavigationController
-        let chatIcon = UITabBarItem(title: "Chat", image: UIImage(named: "chat"), selectedImage: UIImage(named: "chat"))
+        let chatIcon = UITabBarItem(title: "Chat", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard"))
         chatTab.tabBarItem = chatIcon
         chatTab.setViewControllers([ChatViewController()], animated: true)
         
         let finderTab = finderNavigationController
-        let finderIcon = UITabBarItem(title: "Finder", image: UIImage(named: "finder"), selectedImage: UIImage(named: "finder"))
+        let finderIcon = UITabBarItem(title: "Finder", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard"))
         finderTab.tabBarItem = finderIcon
         finderTab.setViewControllers([FinderViewController()], animated: true)
         
         let homeTab = homeNavigationController
-        let homeIcon = UITabBarItem(title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
+        let homeIcon = UITabBarItem(title: "Home", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard"))
         homeTab.tabBarItem = homeIcon
         homeTab.setViewControllers([HomeViewController()], animated: true)
         
         let infoTab = infoNavigationController
-        let infoIcon = UITabBarItem(title: "Info", image: UIImage(named: "info"), selectedImage: UIImage(named: "info"))
+        let infoIcon = UITabBarItem(title: "Info", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard"))
         infoTab.tabBarItem = infoIcon
         infoTab.setViewControllers([InfoViewController()], animated: true)
         
         let caregivingTab = caregivingNavigationController
-        let caregivingIcon = UITabBarItem(title: "Caregiving", image: UIImage(named: "caregiving"), selectedImage: UIImage(named: "caregiving"))
+        let caregivingIcon = UITabBarItem(title: "Caregiving", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard"))
         caregivingTab.tabBarItem = caregivingIcon
         caregivingTab.setViewControllers([CaregivingViewController()], animated: true)
         
@@ -51,6 +51,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.viewControllers = controllers
         
         self.selectedIndex = 2
+        self.tabBar.backgroundColor = .lightGray
     }
 
     //Delegate methods

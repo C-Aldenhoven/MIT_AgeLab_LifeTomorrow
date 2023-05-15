@@ -35,7 +35,24 @@ extension HomeViewController : ORKTaskViewControllerDelegate {
     // Your view controller now implements ORKTaskViewControllerDelegate by handling task results in taskViewController:didFinishWithReason:error:. These results could be in the form of a signed consent document, survey responses, or sensor data. For now, you are simply dismissing the task’s view controller when the task finishes
     func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
         //Handle results with taskViewController.result
-        taskViewController.dismiss(animated: true, completion: nil)
+        switch(reason) {
+        case .completed:
+            let signatureResult: ORKConsentSignatureResult = taskViewController.result.stepResult(forStepIdentifier: "ConsentReviewStep")?.firstResult as! ORKConsentSignatureResult
+            let consentDocument = ConsentDocument.copy() as! ORKConsentDocument
+            signatureResult.apply(to: consentDocument)
+            consentDocument.makePDF{ (data, error) -> Void in
+                var docURL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last
+                docURL = docURL?.appendingPathComponent("consent.pdf")
+                try? data?.write(to: docURL!, options: .atomicWrite)
+            
+                let ac = UIActivityViewController(activityItems: [docURL!], applicationActivities: nil)
+                DispatchQueue.main.async {
+                    self.present(ac, animated: true)
+                }
+            }
+            taskViewController.dismiss(animated: true, completion: nil)
+        default:
+            taskViewController.dismiss(animated: true, completion: nil)
+        }
     }
-    
 }

@@ -39,7 +39,7 @@ public var ConsentDocument: ORKConsentDocument {
     consentDocument.sections = consentSections
 
     //Note: An ORKConsentSignature can also be pre-populated with a name, image and date. This is useful when you need to include a copy of the principal investigator’s signature in the consent document.
-    consentDocument.addSignature(ORKConsentSignature(forPersonWithTitle: nil, dateFormatString: nil, identifier: "ConsentDocumentParticipantSignature"))
+    consentDocument.addSignature(ORKConsentSignature(forPersonWithTitle: "Care receiver study participant", dateFormatString: Date().formatted(), identifier: "ConsentDocumentParticipantSignature"))
   
     return consentDocument
 }
