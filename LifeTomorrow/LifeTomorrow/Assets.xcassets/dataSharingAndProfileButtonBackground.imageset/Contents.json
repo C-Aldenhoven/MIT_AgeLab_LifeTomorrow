@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Symptoms-ON.png",
+      "filename" : "nasa-Q1p7bh3SHj8-unsplash.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Symptoms-ON@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Symptoms-ON@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

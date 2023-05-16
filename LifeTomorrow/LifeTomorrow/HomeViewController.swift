@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "backgroundColor")
         view.addSubview(smartHomeButton)
         view.addSubview(healthButton)
         view.addSubview(dataSharingAndProfileButton)
@@ -73,15 +73,15 @@ class HomeViewController: UIViewController {
     
     private var smartHomeButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Home", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.backgroundColor = .systemBlue
-        button.layer.cornerRadius = 8
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOpacity = 0.6
-        button.layer.shadowOffset = CGSize(width: 8, height: 8)
-        button.layer.borderWidth = 2
-        button.layer.borderColor = UIColor.white.cgColor
+        button.setTitle("Smart Home", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
+        button.contentHorizontalAlignment = .center
+        button.contentVerticalAlignment = .bottom
+        button.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 23.0, right: 0.0)
+        button.layer.cornerRadius = 20
+        button.setBackgroundImage(UIImage(named: "smartHomeButtonBackground"), for: .normal)
+        button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(smartHomeButtonAction), for: .touchUpInside)
         return button
@@ -90,14 +90,14 @@ class HomeViewController: UIViewController {
     private var healthButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Health", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.backgroundColor = .systemBlue
-        button.layer.cornerRadius = 8
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOpacity = 0.8
-        button.layer.shadowOffset = CGSize(width: 4, height: 4)
-        button.layer.borderWidth = 2
-        button.layer.borderColor = UIColor.white.cgColor
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
+        button.contentHorizontalAlignment = .center
+        button.contentVerticalAlignment = .bottom
+        button.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 23.0, right: 0.0)
+        button.layer.cornerRadius = 20
+        button.setBackgroundImage(UIImage(named: "healthButtonBackground"), for: .normal)
+        button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(healthButtonAction), for: .touchUpInside)
         return button
@@ -106,14 +106,14 @@ class HomeViewController: UIViewController {
     private var dataSharingAndProfileButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Data Sharing & Profile", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.backgroundColor = .systemBlue
-        button.layer.cornerRadius = 8
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOpacity = 0.8
-        button.layer.shadowOffset = CGSize(width: 4, height: 4)
-        button.layer.borderWidth = 2
-        button.layer.borderColor = UIColor.white.cgColor
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
+        button.contentHorizontalAlignment = .center
+        button.contentVerticalAlignment = .bottom
+        button.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 23.0, right: 0.0)
+        button.layer.cornerRadius = 20
+        button.setBackgroundImage(UIImage(named: "dataSharingAndProfileButtonBackground"), for: .normal)
+        button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(dataSharingAndProfileButtonAction), for: .touchUpInside)
         return button
@@ -122,14 +122,14 @@ class HomeViewController: UIViewController {
     private var carePlanButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Care Plan", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.backgroundColor = .systemBlue
-        button.layer.cornerRadius = 8
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOpacity = 0.8
-        button.layer.shadowOffset = CGSize(width: 4, height: 4)
-        button.layer.borderWidth = 2
-        button.layer.borderColor = UIColor.white.cgColor
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
+        button.contentHorizontalAlignment = .center
+        button.contentVerticalAlignment = .bottom
+        button.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 23.0, right: 0.0)
+        button.layer.cornerRadius = 20
+        button.setBackgroundImage(UIImage(named: "carePlanButtonBackground"), for: .normal)
+        button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(carePlanButtonAction), for: .touchUpInside)
         return button

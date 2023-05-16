@@ -32,6 +32,7 @@
 		726FB29A2A0440450077B990 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2992A0440450077B990 /* ContentView.swift */; };
 		726FB29C2A0440470077B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB29B2A0440470077B990 /* Assets.xcassets */; };
 		726FB29F2A0440470077B990 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB29E2A0440470077B990 /* Preview Assets.xcassets */; };
+		72AA7EC92A13EE6400524337 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AA7EC82A13EE6400524337 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		726FB2992A0440450077B990 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		726FB29B2A0440470077B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726FB29E2A0440470077B990 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72AA7EC82A13EE6400524337 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8054E3BCA24B28CA0828A141 /* Pods_LifeTomorrowWatch_Watch_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTomorrowWatch_Watch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F050BE96B19FB7DCBB9A1770 /* Pods-LifeTomorrowWatch Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrowWatch Watch App.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrowWatch Watch App/Pods-LifeTomorrowWatch Watch App.release.xcconfig"; sourceTree = "<group>"; };
 		F05EEB6BC5026CF95BD8F1F7 /* Pods_LifeTomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,7 @@
 				726FB28A2A0426430077B990 /* Health */,
 				726FB28D2A0426C90077B990 /* Emergency */,
 				726FB2622A0165600077B990 /* Assets.xcassets */,
+				72AA7EC82A13EE6400524337 /* Colors.xcassets */,
 				726FB2672A0165600077B990 /* Info.plist */,
 			);
 			path = LifeTomorrow;
@@ -325,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72AA7EC92A13EE6400524337 /* Colors.xcassets in Resources */,
 				726FB2632A0165600077B990 /* Assets.xcassets in Resources */,
 				720803B32A09700E001E154B /* GoogleService-Info.plist in Resources */,
 			);

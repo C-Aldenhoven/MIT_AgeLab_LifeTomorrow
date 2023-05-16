@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Insights-OFF.png",
+      "filename" : "r-architecture-T6d96Qrb5MY-unsplash.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Insights-OFF@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Insights-OFF@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

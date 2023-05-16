@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Connect-OFF.png",
+      "filename" : "covene-Ltnbw1-llBA-unsplash.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Connect-OFF@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Connect-OFF@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
