@@ -33,6 +33,10 @@
 		726FB29C2A0440470077B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB29B2A0440470077B990 /* Assets.xcassets */; };
 		726FB29F2A0440470077B990 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB29E2A0440470077B990 /* Preview Assets.xcassets */; };
 		72AA7EC92A13EE6400524337 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AA7EC82A13EE6400524337 /* Colors.xcassets */; };
+		72AA7EED2A1D58BC00524337 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EEC2A1D58BC00524337 /* BaseCollectionViewController.swift */; };
+		72AA7EEF2A1D590D00524337 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EEE2A1D590D00524337 /* HomeCell.swift */; };
+		72AA7EF12A1D592100524337 /* AccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EF02A1D592100524337 /* AccessoryViewController.swift */; };
+		72AA7EF32A1D593700524337 /* AccessoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EF22A1D593700524337 /* AccessoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +71,11 @@
 		726FB29B2A0440470077B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726FB29E2A0440470077B990 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72AA7EC82A13EE6400524337 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		72AA7EE82A1D29C700524337 /* LifeTomorrowRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeTomorrowRelease.entitlements; sourceTree = "<group>"; };
+		72AA7EEC2A1D58BC00524337 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		72AA7EEE2A1D590D00524337 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		72AA7EF02A1D592100524337 /* AccessoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryViewController.swift; sourceTree = "<group>"; };
+		72AA7EF22A1D593700524337 /* AccessoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryCell.swift; sourceTree = "<group>"; };
 		8054E3BCA24B28CA0828A141 /* Pods_LifeTomorrowWatch_Watch_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTomorrowWatch_Watch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F050BE96B19FB7DCBB9A1770 /* Pods-LifeTomorrowWatch Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrowWatch Watch App.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrowWatch Watch App/Pods-LifeTomorrowWatch Watch App.release.xcconfig"; sourceTree = "<group>"; };
 		F05EEB6BC5026CF95BD8F1F7 /* Pods_LifeTomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +154,7 @@
 		726FB2552A01655E0077B990 /* LifeTomorrow */ = {
 			isa = PBXGroup;
 			children = (
+				72AA7EE82A1D29C700524337 /* LifeTomorrowRelease.entitlements */,
 				720804C82A0AD28B001E154B /* Study Supplements */,
 				720803B22A09700E001E154B /* GoogleService-Info.plist */,
 				726FB2902A043D800077B990 /* LifeTomorrow.entitlements */,
@@ -168,6 +178,10 @@
 			isa = PBXGroup;
 			children = (
 				720803CF2A0975FE001E154B /* SmartHomeViewController.swift */,
+				72AA7EEC2A1D58BC00524337 /* BaseCollectionViewController.swift */,
+				72AA7EEE2A1D590D00524337 /* HomeCell.swift */,
+				72AA7EF02A1D592100524337 /* AccessoryViewController.swift */,
+				72AA7EF22A1D593700524337 /* AccessoryCell.swift */,
 			);
 			path = "Smart Home";
 			sourceTree = "<group>";
@@ -415,7 +429,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				726FB25B2A01655E0077B990 /* HomeViewController.swift in Sources */,
+				72AA7EF32A1D593700524337 /* AccessoryCell.swift in Sources */,
 				720805082A0AFAAC001E154B /* UIColor.swift in Sources */,
+				72AA7EEF2A1D590D00524337 /* HomeCell.swift in Sources */,
 				720803D62A09763E001E154B /* HealthViewController.swift in Sources */,
 				726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */,
 				726FB2882A0424BB0077B990 /* NavigationController.swift in Sources */,
@@ -424,6 +440,7 @@
 				726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */,
 				7208050A2A0AFAD1001E154B /* DataHelpers.swift in Sources */,
 				720803D22A097612001E154B /* DataSharingAndProfileViewController.swift in Sources */,
+				72AA7EED2A1D58BC00524337 /* BaseCollectionViewController.swift in Sources */,
 				720805062A0AFA99001E154B /* NSDateComponents.swift in Sources */,
 				720803D82A09893B001E154B /* LoginViewController.swift in Sources */,
 				720804CE2A0AF509001E154B /* CarePlanStorageManager.swift in Sources */,
@@ -431,6 +448,7 @@
 				7208050D2A0B026F001E154B /* CarePlanData.swift in Sources */,
 				720803D02A0975FE001E154B /* SmartHomeViewController.swift in Sources */,
 				720804CA2A0AD2C3001E154B /* ConsentDocument.swift in Sources */,
+				72AA7EF12A1D592100524337 /* AccessoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,7 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = LifeTomorrow/LifeTomorrow.entitlements;
+				CODE_SIGN_ENTITLEMENTS = LifeTomorrow/LifeTomorrowRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A35W4MM59Y;

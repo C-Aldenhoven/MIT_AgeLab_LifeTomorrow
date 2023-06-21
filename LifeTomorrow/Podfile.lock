@@ -71,13 +71,13 @@ PODS:
   - ResearchKit (2.1.0)
 
 DEPENDENCIES:
-  - CareKit (~> 1.2)
+  - CareKit
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Storage
   - FirebaseUI/Auth
   - FirebaseUI/Email
-  - ResearchKit (~> 2.1)
+  - ResearchKit
 
 SPEC REPOS:
   trunk:
@@ -120,6 +120,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   ResearchKit: d7fba1d5b00f5dd299373e46727c5940fc5c1890
 
-PODFILE CHECKSUM: 22b024422ace3d657d9b8a8eb350eee8f4f57c2c
+PODFILE CHECKSUM: 80e955f4fa47afd5c4e46c4f28f5132309210eef
 
 COCOAPODS: 1.11.2

@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        
+        self.navigationItem.titleView = topTitleLabel
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,6 +30,17 @@ class HomeViewController: UIViewController {
             UserDefaults.standard.set(true, forKey: "ConsentSigned")
         }
     }
+    
+    // MARK: UI-Elements
+    
+    private var topTitleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Home"
+        label.font = .systemFont(ofSize: 30)
+        label.textColor = .black
+        label.textAlignment = .left
+        return label
+    }()
     
 }
 

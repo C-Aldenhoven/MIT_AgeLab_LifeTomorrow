@@ -114,6 +114,10 @@
 		726FB23E2A0164DD0077B990 /* LifeTomorrow_Caregiver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 726FB23C2A0164DD0077B990 /* LifeTomorrow_Caregiver.xcdatamodeld */; };
 		726FB2402A0164E00077B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB23F2A0164E00077B990 /* Assets.xcassets */; };
 		726FB2432A0164E00077B990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726FB2412A0164E00077B990 /* LaunchScreen.storyboard */; };
+		729567E12A423B100097B156 /* BlogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729567E02A423B100097B156 /* BlogCell.swift */; };
+		729567E32A423B230097B156 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729567E22A423B230097B156 /* VideoCell.swift */; };
+		729567E52A423E8C0097B156 /* LabelAndButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729567E42A423E8B0097B156 /* LabelAndButtonCell.swift */; };
+		729567E72A4244680097B156 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729567E62A4244680097B156 /* MockData.swift */; };
 		72AA7EC42A0D5EA800524337 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */; };
 		72AA7EC62A0D5ECB00524337 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */; };
 		8DC4D8CFAAD44B2089F284E0 /* Pods_LifeTomorrow_Caregiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F703EB45945D0C1289B3C9C8 /* Pods_LifeTomorrow_Caregiver.framework */; };
@@ -230,6 +234,10 @@
 		726FB23F2A0164E00077B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726FB2422A0164E00077B990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726FB2442A0164E00077B990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		729567E02A423B100097B156 /* BlogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCell.swift; sourceTree = "<group>"; };
+		729567E22A423B230097B156 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		729567E42A423E8B0097B156 /* LabelAndButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndButtonCell.swift; sourceTree = "<group>"; };
+		729567E62A4244680097B156 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		7DD72A7872F6DA811A0D8A91 /* Pods-LifeTomorrow Caregiver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrow Caregiver.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrow Caregiver/Pods-LifeTomorrow Caregiver.release.xcconfig"; sourceTree = "<group>"; };
@@ -555,7 +563,9 @@
 		720804B72A0AC44D001E154B /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				729567DF2A423AED0097B156 /* CustomCells */,
 				720804BE2A0AC4D9001E154B /* InfoViewController.swift */,
+				729567E62A4244680097B156 /* MockData.swift */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -607,6 +617,16 @@
 				726FB23C2A0164DD0077B990 /* LifeTomorrow_Caregiver.xcdatamodeld */,
 			);
 			path = "LifeTomorrow Caregiver";
+			sourceTree = "<group>";
+		};
+		729567DF2A423AED0097B156 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				729567E02A423B100097B156 /* BlogCell.swift */,
+				729567E22A423B230097B156 /* VideoCell.swift */,
+				729567E42A423E8B0097B156 /* LabelAndButtonCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 		72AA7EC22A0D5E7D00524337 /* Study Supplements */ = {
@@ -763,6 +783,7 @@
 				720804982A09B2F0001E154B /* UILayoutSupport+Extensions.swift in Sources */,
 				720804882A09B2F0001E154B /* ATCGenericFirebaseDataSource.swift in Sources */,
 				720804612A09B2F0001E154B /* UIColor.swift in Sources */,
+				729567E52A423E8C0097B156 /* LabelAndButtonCell.swift in Sources */,
 				720804732A09B2F0001E154B /* ATCGenericCollectionViewController.swift in Sources */,
 				720804632A09B2F0001E154B /* String.swift in Sources */,
 				7208045B2A09B2F0001E154B /* ATCRemoteData.swift in Sources */,
@@ -814,11 +835,13 @@
 				7208049C2A09B2F0001E154B /* Typealiases.swift in Sources */,
 				7208048F2A09B2F0001E154B /* ConstraintViewDSL.swift in Sources */,
 				72AA7EC62A0D5ECB00524337 /* ConsentTask.swift in Sources */,
+				729567E72A4244680097B156 /* MockData.swift in Sources */,
 				7208049B2A09B2F0001E154B /* ConstraintLayoutSupport.swift in Sources */,
 				720804512A09B2F0001E154B /* ATCChatUserStoryAdapter.swift in Sources */,
 				720804A22A09B2F1001E154B /* ConstraintLayoutGuideDSL.swift in Sources */,
 				720804582A09B2F0001E154B /* ATCThreadCollectionViewCell.swift in Sources */,
 				7208049F2A09B2F1001E154B /* ConstraintMakerEditable.swift in Sources */,
+				729567E32A423B230097B156 /* VideoCell.swift in Sources */,
 				720804A72A09B2F1001E154B /* ConstraintRelatableTarget.swift in Sources */,
 				720804522A09B2F0001E154B /* ATCChatThreadAdapter.swift in Sources */,
 				7208045D2A09B2F0001E154B /* ATCUser.swift in Sources */,
@@ -837,6 +860,7 @@
 				720804592A09B2F0001E154B /* ATCUserStoryCollectionViewCell.swift in Sources */,
 				7208047F2A09B2F0001E154B /* ATCCarouselCollectionViewCell.swift in Sources */,
 				7208049D2A09B2F0001E154B /* ConstraintConstantTarget.swift in Sources */,
+				729567E12A423B100097B156 /* BlogCell.swift in Sources */,
 				720804932A09B2F0001E154B /* ConstraintDSL.swift in Sources */,
 				720804952A09B2F0001E154B /* ConstraintPriority.swift in Sources */,
 				720804AB2A09B2F1001E154B /* ConstraintMakerRelatable.swift in Sources */,

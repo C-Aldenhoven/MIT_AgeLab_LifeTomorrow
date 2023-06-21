@@ -11,7 +11,7 @@ import FirebaseAuthUI
 import FirebaseEmailAuthUI
 
 class LoginViewController: UIViewController, FUIAuthDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,7 +47,7 @@ class LoginViewController: UIViewController, FUIAuthDelegate {
     }
     
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
-      // handle user and error as necessary
+        // handle user and error as necessary
         print("User has signed in")
     }
 }

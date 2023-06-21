@@ -33,7 +33,7 @@ import ResearchKit
 
 class CarePlanStoreManager: NSObject {
     static let sharedCarePlanStoreManager = CarePlanStoreManager()
-  
+    
     var store: OCKCarePlanStore
     
     override init() {
@@ -41,9 +41,9 @@ class CarePlanStoreManager: NSObject {
         guard let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).last else {
             fatalError("Failed to obtain Documents directory!")
         }
-    
+        
         let storeURL = documentDirectory.appendingPathComponent("CarePlanStore")
-    
+        
         if !fileManager.fileExists(atPath: storeURL.path) {
             try! fileManager.createDirectory(at: storeURL, withIntermediateDirectories: true, attributes: nil)
         }
@@ -54,17 +54,17 @@ class CarePlanStoreManager: NSObject {
     }
     
     func buildCarePlanResultFrom(taskResult: ORKTaskResult) -> OCKCarePlanEventResult {
-      guard let firstResult = taskResult.firstResult as? ORKStepResult,
-        let stepResult = firstResult.results?.first else {
-          fatalError("Unexepected task results")
-      }
-      
-      if let numericResult = stepResult as? ORKNumericQuestionResult,
-        let answer = numericResult.numericAnswer {
-        return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: numericResult.unit, userInfo: nil)
-      }
-      
-      fatalError("Unexpected task result type")
+        guard let firstResult = taskResult.firstResult as? ORKStepResult,
+              let stepResult = firstResult.results?.first else {
+            fatalError("Unexepected task results")
+        }
+        
+        if let numericResult = stepResult as? ORKNumericQuestionResult,
+           let answer = numericResult.numericAnswer {
+            return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: numericResult.unit, userInfo: nil)
+        }
+        
+        fatalError("Unexpected task result type")
     }
-
+    
 }

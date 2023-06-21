@@ -10,7 +10,7 @@ import FirebaseAuth
 import ResearchKit
 
 class HomeViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -137,7 +137,8 @@ class HomeViewController: UIViewController {
     
     // MARK: Button Actions
     @objc private func smartHomeButtonAction() {
-        navigationController?.pushViewController(SmartHomeViewController(), animated: true)
+        let layout = UICollectionViewFlowLayout()
+        navigationController?.pushViewController(SmartHomeViewController(collectionViewLayout: layout), animated: true)
     }
     
     @objc private func healthButtonAction() {
@@ -174,13 +175,13 @@ extension HomeViewController : ORKTaskViewControllerDelegate {
                 var docURL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last
                 docURL = docURL?.appendingPathComponent("consent.pdf")
                 try? data?.write(to: docURL!, options: .atomicWrite)
-            
+                
                 let ac = UIActivityViewController(activityItems: [docURL!], applicationActivities: nil)
                 if let popoverController = ac.popoverPresentationController {
-                        popoverController.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 0, height: 0)
-                        popoverController.sourceView = self.view
-                        popoverController.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
-                    }
+                    popoverController.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 0, height: 0)
+                    popoverController.sourceView = self.view
+                    popoverController.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+                }
                 DispatchQueue.main.async {
                     self.present(ac, animated: true)
                 }
