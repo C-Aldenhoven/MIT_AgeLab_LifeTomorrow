@@ -15,16 +15,20 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
-        
         view.addSubview(topTitleLabel)
+        view.addSubview(tableView)
         
         let guide = self.view.safeAreaLayoutGuide
         
         let constraints = [
             topTitleLabel.topAnchor.constraint(equalTo: guide.topAnchor, constant: -40),
             topTitleLabel.leftAnchor.constraint(equalTo: guide.leftAnchor, constant: 10),
-            topTitleLabel.rightAnchor.constraint(equalTo: guide.rightAnchor, constant: -10)
+            topTitleLabel.rightAnchor.constraint(equalTo: guide.rightAnchor, constant: -10),
+            
+            tableView.topAnchor.constraint(equalTo: topTitleLabel.bottomAnchor),
+            tableView.leftAnchor.constraint(equalTo: guide.leftAnchor, constant: 10),
+            tableView.rightAnchor.constraint(equalTo: guide.rightAnchor,constant: -10),
+            tableView.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: 10)
         ]
         NSLayoutConstraint.activate(constraints)
         
@@ -39,6 +43,12 @@ class InfoViewController: UIViewController {
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
+    }()
+    
+    private var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
     }()
 }
 

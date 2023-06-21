@@ -107,6 +107,11 @@
 		720804BF2A0AC4D9001E154B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720804BE2A0AC4D9001E154B /* InfoViewController.swift */; };
 		720804C12A0AC4EA001E154B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720804C02A0AC4EA001E154B /* HomeViewController.swift */; };
 		720804C42A0AC50B001E154B /* FinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720804C32A0AC50A001E154B /* FinderViewController.swift */; };
+		724F7F662A436147003A7521 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F652A436147003A7521 /* Blog.swift */; };
+		724F7F682A43616B003A7521 /* BlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F672A43616B003A7521 /* BlogAPI.swift */; };
+		724F7F6A2A4361A0003A7521 /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F692A4361A0003A7521 /* BlogTableViewCell.swift */; };
+		724F7F6C2A4361D1003A7521 /* BlogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F6B2A4361D1003A7521 /* BlogsViewController.swift */; };
+		724F7F6E2A436375003A7521 /* ContactAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724F7F6D2A436375003A7521 /* ContactAssets.xcassets */; };
 		726FB2342A0164DD0077B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2332A0164DD0077B990 /* AppDelegate.swift */; };
 		726FB2362A0164DD0077B990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2352A0164DD0077B990 /* SceneDelegate.swift */; };
 		726FB2382A0164DD0077B990 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2372A0164DD0077B990 /* TabBarController.swift */; };
@@ -225,6 +230,11 @@
 		720804BE2A0AC4D9001E154B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		720804C02A0AC4EA001E154B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		720804C32A0AC50A001E154B /* FinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderViewController.swift; sourceTree = "<group>"; };
+		724F7F652A436147003A7521 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
+		724F7F672A43616B003A7521 /* BlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogAPI.swift; sourceTree = "<group>"; };
+		724F7F692A4361A0003A7521 /* BlogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
+		724F7F6B2A4361D1003A7521 /* BlogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsViewController.swift; sourceTree = "<group>"; };
+		724F7F6D2A436375003A7521 /* ContactAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = ContactAssets.xcassets; path = "../../../../../Downloads/ios-uitableview-programmatically-in-swift-master/contactsapp/contactsapp/ContactAssets.xcassets"; sourceTree = "<group>"; };
 		726FB2302A0164DD0077B990 /* LifeTomorrow Caregiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LifeTomorrow Caregiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		726FB2332A0164DD0077B990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726FB2352A0164DD0077B990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -563,6 +573,7 @@
 		720804B72A0AC44D001E154B /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				724F7F642A43612E003A7521 /* New Group */,
 				729567DF2A423AED0097B156 /* CustomCells */,
 				720804BE2A0AC4D9001E154B /* InfoViewController.swift */,
 				729567E62A4244680097B156 /* MockData.swift */,
@@ -576,6 +587,17 @@
 				720804BB2A0AC4B3001E154B /* CaregivingViewController.swift */,
 			);
 			path = Caregiving;
+			sourceTree = "<group>";
+		};
+		724F7F642A43612E003A7521 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				724F7F652A436147003A7521 /* Blog.swift */,
+				724F7F672A43616B003A7521 /* BlogAPI.swift */,
+				724F7F692A4361A0003A7521 /* BlogTableViewCell.swift */,
+				724F7F6B2A4361D1003A7521 /* BlogsViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		726FB2272A0164DD0077B990 = {
@@ -609,6 +631,7 @@
 				726FB2352A0164DD0077B990 /* SceneDelegate.swift */,
 				726FB2372A0164DD0077B990 /* TabBarController.swift */,
 				720804B22A0AC130001E154B /* NavigationController.swift */,
+				724F7F6D2A436375003A7521 /* ContactAssets.xcassets */,
 				726FB2392A0164DD0077B990 /* Main.storyboard */,
 				726FB23F2A0164E00077B990 /* Assets.xcassets */,
 				726FB2412A0164E00077B990 /* LaunchScreen.storyboard */,
@@ -721,6 +744,7 @@
 				720804772A09B2F0001E154B /* ATCViewControllerContainerCollectionViewCell.xib in Resources */,
 				720804802A09B2F0001E154B /* ATCCarouselCollectionViewCell.xib in Resources */,
 				726FB2402A0164E00077B990 /* Assets.xcassets in Resources */,
+				724F7F6E2A436375003A7521 /* ContactAssets.xcassets in Resources */,
 				726FB23B2A0164DD0077B990 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,6 +853,7 @@
 				720804712A09B2F0001E154B /* ATCMenuHeaderTableViewCell.swift in Sources */,
 				720804A52A09B2F1001E154B /* Constraint.swift in Sources */,
 				720804662A09B2F0001E154B /* ATCViewControllerContainerRowAdapter.swift in Sources */,
+				724F7F6A2A4361A0003A7521 /* BlogTableViewCell.swift in Sources */,
 				720804A82A09B2F1001E154B /* LayoutConstraint.swift in Sources */,
 				720804842A09B2F0001E154B /* ATCGenericLocalDataSource.swift in Sources */,
 				720804C42A0AC50B001E154B /* FinderViewController.swift in Sources */,
@@ -846,6 +871,7 @@
 				720804522A09B2F0001E154B /* ATCChatThreadAdapter.swift in Sources */,
 				7208045D2A09B2F0001E154B /* ATCUser.swift in Sources */,
 				7208045F2A09B2F0001E154B /* Date.swift in Sources */,
+				724F7F662A436147003A7521 /* Blog.swift in Sources */,
 				720804BC2A0AC4B3001E154B /* CaregivingViewController.swift in Sources */,
 				726FB23E2A0164DD0077B990 /* LifeTomorrow_Caregiver.xcdatamodeld in Sources */,
 				720804912A09B2F0001E154B /* ConstraintInsets.swift in Sources */,
@@ -861,11 +887,13 @@
 				7208047F2A09B2F0001E154B /* ATCCarouselCollectionViewCell.swift in Sources */,
 				7208049D2A09B2F0001E154B /* ConstraintConstantTarget.swift in Sources */,
 				729567E12A423B100097B156 /* BlogCell.swift in Sources */,
+				724F7F6C2A4361D1003A7521 /* BlogsViewController.swift in Sources */,
 				720804932A09B2F0001E154B /* ConstraintDSL.swift in Sources */,
 				720804952A09B2F0001E154B /* ConstraintPriority.swift in Sources */,
 				720804AB2A09B2F1001E154B /* ConstraintMakerRelatable.swift in Sources */,
 				720804962A09B2F0001E154B /* ConstraintInsetTarget.swift in Sources */,
 				7208046E2A09B2F0001E154B /* ATCMenuCollectionViewController.swift in Sources */,
+				724F7F682A43616B003A7521 /* BlogAPI.swift in Sources */,
 				720804852A09B2F0001E154B /* ATCUIGenericConfigurationProtocol.swift in Sources */,
 				720804A02A09B2F1001E154B /* ConstraintMaker.swift in Sources */,
 				7208048E2A09B2F0001E154B /* ConstraintAttributes.swift in Sources */,

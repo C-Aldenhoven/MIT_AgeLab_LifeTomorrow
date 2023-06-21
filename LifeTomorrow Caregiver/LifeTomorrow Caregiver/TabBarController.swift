@@ -40,7 +40,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         let infoTab = infoNavigationController
         let infoIcon = UITabBarItem(title: "Info", image: UIImage(named: "info"), selectedImage: UIImage(named: "infoFilled"))
         infoTab.tabBarItem = infoIcon
-        infoTab.setViewControllers([InfoViewController()], animated: true)
+        infoTab.setViewControllers([BlogsViewController()], animated: true)
         
         let caregivingTab = caregivingNavigationController
         let caregivingIcon = UITabBarItem(title: "Caregiving", image: UIImage(named: "care"), selectedImage: UIImage(named: "careFilled"))
@@ -51,7 +51,12 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.viewControllers = controllers
         
         self.selectedIndex = 3
-        self.tabBar.backgroundColor = .lightGray
+        self.tabBar.backgroundColor = .white
+        self.tabBar.layer.masksToBounds = false
+        self.tabBar.layer.shadowColor = UIColor.black.withAlphaComponent(0.4).cgColor
+        self.tabBar.layer.shadowOffset = CGSize(width: -4, height: -6)
+        self.tabBar.layer.shadowOpacity = 0.5
+        self.tabBar.layer.shadowRadius = 20
         
         setupMiddleButton()
     }
