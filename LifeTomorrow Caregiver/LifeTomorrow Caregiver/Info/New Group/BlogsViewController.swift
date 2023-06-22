@@ -30,7 +30,7 @@ class BlogsViewController: UIViewController, UITableViewDataSource, UITableViewD
         view.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
