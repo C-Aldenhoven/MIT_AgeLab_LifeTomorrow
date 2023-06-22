@@ -11,6 +11,7 @@ class BlogsViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     private var blogs = BlogAPI.getBlogs() // model
     let blogsTableView = UITableView() // view
+    private let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,44 +19,39 @@ class BlogsViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
         
-        view.addSubview(topTitleLabel)
-        view.addSubview(blogsTableView)
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 8
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        stackView.addArrangedSubview(topTitleLabel)
+        stackView.addArrangedSubview(blogsTableView)
+        
+        view.addSubview(stackView)
+        
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
         
         blogsTableView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let guide = self.view.safeAreaLayoutGuide
-        
-        let constraints = [
-            topTitleLabel.topAnchor.constraint(equalTo: guide.topAnchor, constant: -40),
-            topTitleLabel.leftAnchor.constraint(equalTo: guide.leftAnchor, constant: 10),
-            topTitleLabel.rightAnchor.constraint(equalTo: guide.rightAnchor, constant: -10),
-            
-            blogsTableView.topAnchor.constraint(equalTo: topTitleLabel.bottomAnchor),
-            blogsTableView.leftAnchor.constraint(equalTo: guide.leftAnchor),
-            blogsTableView.rightAnchor.constraint(equalTo: guide.rightAnchor),
-            blogsTableView.bottomAnchor.constraint(equalTo: guide.bottomAnchor)
-        ]
-        NSLayoutConstraint.activate(constraints)
-        
         blogsTableView.dataSource = self
         blogsTableView.delegate = self
         
         blogsTableView.register(BlogTableViewCell.self, forCellReuseIdentifier: "blogCell")
-        
         blogsTableView.separatorStyle = .none
         
-        self.setupSearch()
+        blogsTableView.tableHeaderView = searchController.searchBar
         
+        searchController.searchResultsUpdater = self
+        
+        searchController.hidesNavigationBarDuringPresentation = true
+        searchController.obscuresBackgroundDuringPresentation = false
     }
     
     // MARK: Search
-    
-    private var searchController = UISearchController(searchResultsController: nil)
-    
-    func setupSearch() {
-        self.navigationItem.searchController = searchController
-        searchController.searchResultsUpdater = self
-    }
     
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text, !searchText.isEmpty {
@@ -73,7 +69,7 @@ class BlogsViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     private var topTitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Information"
+        label.text = "  Information"
         label.font = .boldSystemFont(ofSize: 40)
         label.textColor = .black
         label.textAlignment = .left
@@ -99,6 +95,5 @@ class BlogsViewController: UIViewController, UITableViewDataSource, UITableViewD
         return 130
     }
     
-    
-    
 }
+
