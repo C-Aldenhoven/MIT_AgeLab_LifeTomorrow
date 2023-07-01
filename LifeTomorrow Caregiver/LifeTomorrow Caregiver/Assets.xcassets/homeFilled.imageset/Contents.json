@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "house-fill.svg",
+      "filename" : "house.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "house-fill 1.svg",
+      "filename" : "house@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "house-fill 2.svg",
+      "filename" : "house@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

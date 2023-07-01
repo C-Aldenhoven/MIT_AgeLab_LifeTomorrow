@@ -111,7 +111,12 @@
 		724F7F682A43616B003A7521 /* BlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F672A43616B003A7521 /* BlogAPI.swift */; };
 		724F7F6A2A4361A0003A7521 /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F692A4361A0003A7521 /* BlogTableViewCell.swift */; };
 		724F7F6C2A4361D1003A7521 /* BlogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F6B2A4361D1003A7521 /* BlogsViewController.swift */; };
-		724F7F6E2A436375003A7521 /* ContactAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724F7F6D2A436375003A7521 /* ContactAssets.xcassets */; };
+		724F7F742A44DBFE003A7521 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F732A44DBFE003A7521 /* Fonts.swift */; };
+		724F7F762A44DC0F003A7521 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F752A44DC0F003A7521 /* Colors.swift */; };
+		724F7F782A44E58C003A7521 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F772A44E58C003A7521 /* Resource.swift */; };
+		724F7F7A2A44E5B0003A7521 /* ResourceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F792A44E5B0003A7521 /* ResourceAPI.swift */; };
+		724F7F7C2A44E602003A7521 /* ResourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F7B2A44E602003A7521 /* ResourceTableViewCell.swift */; };
+		724F7F7E2A4B3CC5003A7521 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F7F7D2A4B3CC5003A7521 /* ProfileViewController.swift */; };
 		726FB2342A0164DD0077B990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2332A0164DD0077B990 /* AppDelegate.swift */; };
 		726FB2362A0164DD0077B990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2352A0164DD0077B990 /* SceneDelegate.swift */; };
 		726FB2382A0164DD0077B990 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2372A0164DD0077B990 /* TabBarController.swift */; };
@@ -123,6 +128,12 @@
 		729567E32A423B230097B156 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729567E22A423B230097B156 /* VideoCell.swift */; };
 		729567E52A423E8C0097B156 /* LabelAndButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729567E42A423E8B0097B156 /* LabelAndButtonCell.swift */; };
 		729567E72A4244680097B156 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729567E62A4244680097B156 /* MockData.swift */; };
+		729C48F72A50D6BA00D3AAB9 /* DirectMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C48F62A50D6BA00D3AAB9 /* DirectMessage.swift */; };
+		729C48FC2A50D72200D3AAB9 /* DirectMessageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C48FB2A50D72200D3AAB9 /* DirectMessageAPI.swift */; };
+		729C48FE2A50D73D00D3AAB9 /* DirectMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C48FD2A50D73D00D3AAB9 /* DirectMessageTableViewCell.swift */; };
+		729C49002A50E38E00D3AAB9 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C48FF2A50E38E00D3AAB9 /* Channel.swift */; };
+		729C49022A50E3A000D3AAB9 /* ChannelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49012A50E3A000D3AAB9 /* ChannelAPI.swift */; };
+		729C49042A50E3B600D3AAB9 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49032A50E3B600D3AAB9 /* ChannelTableViewCell.swift */; };
 		72AA7EC42A0D5EA800524337 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */; };
 		72AA7EC62A0D5ECB00524337 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */; };
 		8DC4D8CFAAD44B2089F284E0 /* Pods_LifeTomorrow_Caregiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F703EB45945D0C1289B3C9C8 /* Pods_LifeTomorrow_Caregiver.framework */; };
@@ -234,7 +245,12 @@
 		724F7F672A43616B003A7521 /* BlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogAPI.swift; sourceTree = "<group>"; };
 		724F7F692A4361A0003A7521 /* BlogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
 		724F7F6B2A4361D1003A7521 /* BlogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsViewController.swift; sourceTree = "<group>"; };
-		724F7F6D2A436375003A7521 /* ContactAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = ContactAssets.xcassets; path = "../../../../../Downloads/ios-uitableview-programmatically-in-swift-master/contactsapp/contactsapp/ContactAssets.xcassets"; sourceTree = "<group>"; };
+		724F7F732A44DBFE003A7521 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		724F7F752A44DC0F003A7521 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		724F7F772A44E58C003A7521 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		724F7F792A44E5B0003A7521 /* ResourceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceAPI.swift; sourceTree = "<group>"; };
+		724F7F7B2A44E602003A7521 /* ResourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceTableViewCell.swift; sourceTree = "<group>"; };
+		724F7F7D2A4B3CC5003A7521 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		726FB2302A0164DD0077B990 /* LifeTomorrow Caregiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LifeTomorrow Caregiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		726FB2332A0164DD0077B990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726FB2352A0164DD0077B990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -248,6 +264,12 @@
 		729567E22A423B230097B156 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		729567E42A423E8B0097B156 /* LabelAndButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndButtonCell.swift; sourceTree = "<group>"; };
 		729567E62A4244680097B156 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		729C48F62A50D6BA00D3AAB9 /* DirectMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessage.swift; sourceTree = "<group>"; };
+		729C48FB2A50D72200D3AAB9 /* DirectMessageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageAPI.swift; sourceTree = "<group>"; };
+		729C48FD2A50D73D00D3AAB9 /* DirectMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageTableViewCell.swift; sourceTree = "<group>"; };
+		729C48FF2A50E38E00D3AAB9 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		729C49012A50E3A000D3AAB9 /* ChannelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAPI.swift; sourceTree = "<group>"; };
+		729C49032A50E3B600D3AAB9 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
 		72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		7DD72A7872F6DA811A0D8A91 /* Pods-LifeTomorrow Caregiver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrow Caregiver.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrow Caregiver/Pods-LifeTomorrow Caregiver.release.xcconfig"; sourceTree = "<group>"; };
@@ -548,6 +570,8 @@
 		720804B42A0AC3FB001E154B /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				729C48FA2A50D70400D3AAB9 /* Channel */,
+				729C48F82A50D6CC00D3AAB9 /* DirectMessage */,
 				720804B92A0AC497001E154B /* ChatViewController.swift */,
 				720803DB2A09B2EE001E154B /* Core */,
 			);
@@ -558,6 +582,9 @@
 			isa = PBXGroup;
 			children = (
 				720804C32A0AC50A001E154B /* FinderViewController.swift */,
+				724F7F772A44E58C003A7521 /* Resource.swift */,
+				724F7F792A44E5B0003A7521 /* ResourceAPI.swift */,
+				724F7F7B2A44E602003A7521 /* ResourceTableViewCell.swift */,
 			);
 			path = Finder;
 			sourceTree = "<group>";
@@ -566,6 +593,7 @@
 			isa = PBXGroup;
 			children = (
 				720804C02A0AC4EA001E154B /* HomeViewController.swift */,
+				724F7F7D2A4B3CC5003A7521 /* ProfileViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -600,6 +628,15 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		724F7F702A44DBC9003A7521 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				724F7F732A44DBFE003A7521 /* Fonts.swift */,
+				724F7F752A44DC0F003A7521 /* Colors.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		726FB2272A0164DD0077B990 = {
 			isa = PBXGroup;
 			children = (
@@ -621,6 +658,7 @@
 		726FB2322A0164DD0077B990 /* LifeTomorrow Caregiver */ = {
 			isa = PBXGroup;
 			children = (
+				724F7F702A44DBC9003A7521 /* Styles */,
 				72AA7EC22A0D5E7D00524337 /* Study Supplements */,
 				720804B42A0AC3FB001E154B /* Chat */,
 				720804B82A0AC454001E154B /* Caregiving */,
@@ -631,7 +669,6 @@
 				726FB2352A0164DD0077B990 /* SceneDelegate.swift */,
 				726FB2372A0164DD0077B990 /* TabBarController.swift */,
 				720804B22A0AC130001E154B /* NavigationController.swift */,
-				724F7F6D2A436375003A7521 /* ContactAssets.xcassets */,
 				726FB2392A0164DD0077B990 /* Main.storyboard */,
 				726FB23F2A0164E00077B990 /* Assets.xcassets */,
 				726FB2412A0164E00077B990 /* LaunchScreen.storyboard */,
@@ -650,6 +687,26 @@
 				729567E42A423E8B0097B156 /* LabelAndButtonCell.swift */,
 			);
 			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		729C48F82A50D6CC00D3AAB9 /* DirectMessage */ = {
+			isa = PBXGroup;
+			children = (
+				729C48F62A50D6BA00D3AAB9 /* DirectMessage.swift */,
+				729C48FB2A50D72200D3AAB9 /* DirectMessageAPI.swift */,
+				729C48FD2A50D73D00D3AAB9 /* DirectMessageTableViewCell.swift */,
+			);
+			path = DirectMessage;
+			sourceTree = "<group>";
+		};
+		729C48FA2A50D70400D3AAB9 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				729C48FF2A50E38E00D3AAB9 /* Channel.swift */,
+				729C49012A50E3A000D3AAB9 /* ChannelAPI.swift */,
+				729C49032A50E3B600D3AAB9 /* ChannelTableViewCell.swift */,
+			);
+			path = Channel;
 			sourceTree = "<group>";
 		};
 		72AA7EC22A0D5E7D00524337 /* Study Supplements */ = {
@@ -744,7 +801,6 @@
 				720804772A09B2F0001E154B /* ATCViewControllerContainerCollectionViewCell.xib in Resources */,
 				720804802A09B2F0001E154B /* ATCCarouselCollectionViewCell.xib in Resources */,
 				726FB2402A0164E00077B990 /* Assets.xcassets in Resources */,
-				724F7F6E2A436375003A7521 /* ContactAssets.xcassets in Resources */,
 				726FB23B2A0164DD0077B990 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -804,6 +860,7 @@
 				720804742A09B2F0001E154B /* ATCLiquidCollectionViewLayout.swift in Sources */,
 				720804BF2A0AC4D9001E154B /* InfoViewController.swift in Sources */,
 				720804992A09B2F0001E154B /* ConstraintView.swift in Sources */,
+				724F7F7E2A4B3CC5003A7521 /* ProfileViewController.swift in Sources */,
 				720804982A09B2F0001E154B /* UILayoutSupport+Extensions.swift in Sources */,
 				720804882A09B2F0001E154B /* ATCGenericFirebaseDataSource.swift in Sources */,
 				720804612A09B2F0001E154B /* UIColor.swift in Sources */,
@@ -828,12 +885,16 @@
 				7208046B2A09B2F0001E154B /* ATCMenuItemCollectionViewCellProtocol.swift in Sources */,
 				720804552A09B2F0001E154B /* ATCChatThreadsViewController.swift in Sources */,
 				720804A92A09B2F1001E154B /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				729C48FC2A50D72200D3AAB9 /* DirectMessageAPI.swift in Sources */,
 				720804642A09B2F0001E154B /* UIImage.swift in Sources */,
 				720804652A09B2F0001E154B /* ATCStoryAdapter.swift in Sources */,
 				726FB2382A0164DD0077B990 /* TabBarController.swift in Sources */,
 				720804532A09B2F0001E154B /* ATCChatThreadViewController.swift in Sources */,
+				724F7F7A2A44E5B0003A7521 /* ResourceAPI.swift in Sources */,
 				720804722A09B2F0001E154B /* ATCMenuItemRowAdapter.swift in Sources */,
+				729C48FE2A50D73D00D3AAB9 /* DirectMessageTableViewCell.swift in Sources */,
 				720804752A09B2F0001E154B /* ATCCollectionViewFlowLayout.swift in Sources */,
+				724F7F7C2A44E602003A7521 /* ResourceTableViewCell.swift in Sources */,
 				7208044F2A09B2F0001E154B /* ATCChatChannel.swift in Sources */,
 				720804872A09B2F0001E154B /* TimeFormatHelper.swift in Sources */,
 				720804692A09B2F0001E154B /* ATCHostViewController.swift in Sources */,
@@ -842,10 +903,12 @@
 				7208046F2A09B2F0001E154B /* ATCMenuTableViewController.swift in Sources */,
 				726FB2342A0164DD0077B990 /* AppDelegate.swift in Sources */,
 				7208049E2A09B2F1001E154B /* ConstraintOffsetTarget.swift in Sources */,
+				729C49002A50E38E00D3AAB9 /* Channel.swift in Sources */,
 				7208046A2A09B2F0001E154B /* ATCNavigationController.swift in Sources */,
 				7208048A2A09B2F0001E154B /* ConstraintMultiplierTarget.swift in Sources */,
 				720804A32A09B2F1001E154B /* ConstraintView+Extensions.swift in Sources */,
 				726FB2362A0164DD0077B990 /* SceneDelegate.swift in Sources */,
+				724F7F782A44E58C003A7521 /* Resource.swift in Sources */,
 				720804A12A09B2F1001E154B /* ConstraintRelation.swift in Sources */,
 				7208046C2A09B2F0001E154B /* ATCDrawerController.swift in Sources */,
 				7208045C2A09B2F0001E154B /* ATCViewControllerContainerViewModel.swift in Sources */,
@@ -868,9 +931,13 @@
 				7208049F2A09B2F1001E154B /* ConstraintMakerEditable.swift in Sources */,
 				729567E32A423B230097B156 /* VideoCell.swift in Sources */,
 				720804A72A09B2F1001E154B /* ConstraintRelatableTarget.swift in Sources */,
+				729C49042A50E3B600D3AAB9 /* ChannelTableViewCell.swift in Sources */,
 				720804522A09B2F0001E154B /* ATCChatThreadAdapter.swift in Sources */,
 				7208045D2A09B2F0001E154B /* ATCUser.swift in Sources */,
+				729C49022A50E3A000D3AAB9 /* ChannelAPI.swift in Sources */,
+				729C48F72A50D6BA00D3AAB9 /* DirectMessage.swift in Sources */,
 				7208045F2A09B2F0001E154B /* Date.swift in Sources */,
+				724F7F762A44DC0F003A7521 /* Colors.swift in Sources */,
 				724F7F662A436147003A7521 /* Blog.swift in Sources */,
 				720804BC2A0AC4B3001E154B /* CaregivingViewController.swift in Sources */,
 				726FB23E2A0164DD0077B990 /* LifeTomorrow_Caregiver.xcdatamodeld in Sources */,
@@ -892,6 +959,7 @@
 				720804952A09B2F0001E154B /* ConstraintPriority.swift in Sources */,
 				720804AB2A09B2F1001E154B /* ConstraintMakerRelatable.swift in Sources */,
 				720804962A09B2F0001E154B /* ConstraintInsetTarget.swift in Sources */,
+				724F7F742A44DBFE003A7521 /* Fonts.swift in Sources */,
 				7208046E2A09B2F0001E154B /* ATCMenuCollectionViewController.swift in Sources */,
 				724F7F682A43616B003A7521 /* BlogAPI.swift in Sources */,
 				720804852A09B2F0001E154B /* ATCUIGenericConfigurationProtocol.swift in Sources */,

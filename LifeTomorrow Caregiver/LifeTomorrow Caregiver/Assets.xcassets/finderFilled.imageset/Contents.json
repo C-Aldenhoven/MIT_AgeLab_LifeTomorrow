@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "map-pin-line-fill 1.svg",
+      "filename" : "mappinline.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "map-pin-line-fill.svg",
+      "filename" : "mappinline@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "map-pin-line-fill 2.svg",
+      "filename" : "mappinline@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

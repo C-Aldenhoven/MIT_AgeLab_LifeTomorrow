@@ -38,8 +38,10 @@ class InfoViewController: UIViewController {
     private var topTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "Information"
-        label.font = .boldSystemFont(ofSize: 40)
-        label.textColor = .black
+        label.layer.opacity = 1
+        label.textColor = UIColor.black
+        label.numberOfLines = 0
+        label.font = UIFont.textStyle12
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

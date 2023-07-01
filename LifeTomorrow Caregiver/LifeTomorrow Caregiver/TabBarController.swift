@@ -50,7 +50,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         let controllers = [chatTab, finderTab, homeTab, infoTab, caregivingTab]  //array of the root view controllers displayed by the tab bar interface
         self.viewControllers = controllers
         
-        self.selectedIndex = 3
+        self.selectedIndex = 0
         self.tabBar.backgroundColor = .white
         self.tabBar.layer.masksToBounds = false
         self.tabBar.layer.shadowColor = UIColor.black.withAlphaComponent(0.4).cgColor

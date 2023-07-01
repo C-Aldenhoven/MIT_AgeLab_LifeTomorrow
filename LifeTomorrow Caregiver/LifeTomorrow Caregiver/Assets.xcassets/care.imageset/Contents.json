@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "hand-heart.svg",
+      "filename" : "handheart.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "hand-heart 1.svg",
+      "filename" : "handheart@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "hand-heart 2.svg",
+      "filename" : "handheart@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

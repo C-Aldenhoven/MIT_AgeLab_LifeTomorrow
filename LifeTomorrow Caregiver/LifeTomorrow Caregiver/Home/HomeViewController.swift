@@ -5,7 +5,6 @@
 //  Created by Céline Aldenhoven on 09.05.23.
 //
 
-import Foundation
 import UIKit
 import ResearchKit
 
@@ -16,7 +15,42 @@ class HomeViewController: UIViewController {
         
         view.backgroundColor = .white
         
-        self.navigationItem.titleView = topTitleLabel
+        view.addSubview(topTitleLabel)
+        view.addSubview(profileButton)
+        view.addSubview(careButton)
+        view.addSubview(chatButton)
+        view.addSubview(infoButton)
+        
+        let guide = view.safeAreaLayoutGuide
+        
+        NSLayoutConstraint.activate([
+            topTitleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
+            topTitleLabel.leadingAnchor.constraint(equalTo: guide.leadingAnchor),
+            topTitleLabel.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
+            
+            profileButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
+            profileButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -30),
+            profileButton.heightAnchor.constraint(equalToConstant: 50),
+            profileButton.widthAnchor.constraint(equalToConstant: 50),
+            
+            careButton.topAnchor.constraint(equalTo: topTitleLabel.bottomAnchor, constant: 5),
+            careButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
+            careButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor),
+            careButton.heightAnchor.constraint(equalToConstant: 310),
+            
+            chatButton.topAnchor.constraint(equalTo: careButton.bottomAnchor, constant: -20),
+            chatButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
+            chatButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor),
+            chatButton.heightAnchor.constraint(equalToConstant: 130),
+            
+            infoButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -10),
+            infoButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
+            infoButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor),
+            infoButton.heightAnchor.constraint(equalToConstant: 230)
+        ])
+        
+        self.navigationController?.navigationBar.isHidden = true
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,15 +65,74 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // MARK: Button Functions
+    
+    @objc func showProfilePage() {
+        self.navigationController?.pushViewController(ProfileViewController(), animated: true)
+    }
+    
+    @objc func showCarePage() {
+        self.tabBarController?.selectedIndex = 4
+    }
+    
+    @objc func showChatPage() {
+        self.tabBarController?.selectedIndex = 0
+    }
+    
+    @objc func showInfoPage() {
+        self.tabBarController?.selectedIndex = 3
+    }
+    
     // MARK: UI-Elements
     
     private var topTitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Home"
-        label.font = .systemFont(ofSize: 30)
+        label.text = "  Welcome back, Joe!"
+        label.font = .boldSystemFont(ofSize: 25)
         label.textColor = .black
         label.textAlignment = .left
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
+    }()
+    
+    private var profileButton: UIButton = {
+        let button = UIButton()
+        button.setBackgroundImage(UIImage(named: "dummyProfileButtonImage"), for: .normal)
+        button.layer.cornerRadius = 25
+        button.addTarget(self, action: #selector(showProfilePage), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.clipsToBounds = true
+        return button
+    }()
+    
+    private var careButton: UIButton = {
+        let button = UIButton()
+        button.setBackgroundImage(UIImage(named: "dummyHomeCareButton"), for: .normal)
+        button.layer.cornerRadius = 15
+        button.addTarget(self, action: #selector(showCarePage), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.clipsToBounds = true
+        return button
+    }()
+    
+    private var chatButton: UIButton = {
+        let button = UIButton()
+        button.setBackgroundImage(UIImage(named: "dummyHomeChatButton"), for: .normal)
+        button.layer.cornerRadius = 15
+        button.addTarget(self, action: #selector(showChatPage), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.clipsToBounds = true
+        return button
+    }()
+    
+    private var infoButton: UIButton = {
+        let button = UIButton()
+        button.setBackgroundImage(UIImage(named: "dummyHomeInfoButton"), for: .normal)
+        button.layer.cornerRadius = 15
+        button.addTarget(self, action: #selector(showInfoPage), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.clipsToBounds = true
+        return button
     }()
     
 }
