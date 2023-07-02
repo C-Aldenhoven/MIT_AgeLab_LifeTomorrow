@@ -14,18 +14,24 @@ class ChannelTableViewCell: UITableViewCell {
             guard let channelItem = channel else {return}
             if let name = channelItem.name {
                 nameLabel.text = name
+                cellImageView.image = UIImage(named: name)
             }
             
-            if let address = channelItem.address {
-                addressLabel.text = " \(address) "
+            if let description = channelItem.description {
+                descriptionLabel.text = "\(description) "
             }
             
-            if let openingHours = channelItem.openingHours {
-                openingHoursLabel.text = " \(openingHours) "
+            if let members = channelItem.members {
+                membersLabel.text = "\(members) members"
             }
             
-            cellImageView.image = UIImage(named: "dummyFinderImage")
+            if channelItem.starred! {
+                starredImageView.image = UIImage(named: "star")
+            }
             
+            if !channelItem.starred! {
+                starredImageView.image = UIImage(named: "starNotFilled")
+            }
         }
     }
 
@@ -36,12 +42,14 @@ class ChannelTableViewCell: UITableViewCell {
         cellContainerView.addSubview(cellImageView)
         cellContainerView.addSubview(containerView)
         containerView.addSubview(nameLabel)
-        containerView.addSubview(addressLabel)
-        containerView.addSubview(openingHoursLabel)
+        containerView.addSubview(descriptionLabel)
+        containerView.addSubview(membersLabel)
+        containerView.addSubview(membersImageView)
+        containerView.addSubview(starredImageView)
         
         let constraints = [
-            cellContainerView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 7.5),
-            cellContainerView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -7.5),
+            cellContainerView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 10),
+            cellContainerView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -10),
             cellContainerView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 10),
             cellContainerView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -10),
             
@@ -57,13 +65,21 @@ class ChannelTableViewCell: UITableViewCell {
             
             nameLabel.topAnchor.constraint(equalTo: self.containerView.topAnchor, constant: 10),
             nameLabel.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor, constant: 15),
-            nameLabel.trailingAnchor.constraint(equalTo: self.containerView.trailingAnchor, constant: -5),
+            nameLabel.trailingAnchor.constraint(equalTo: self.containerView.trailingAnchor, constant: -55),
             
-            addressLabel.centerYAnchor.constraint(equalTo: self.containerView.centerYAnchor),
-            addressLabel.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor, constant: 15),
+            starredImageView.topAnchor.constraint(equalTo: self.containerView.topAnchor, constant: 10),
+            starredImageView.trailingAnchor.constraint(equalTo: self.containerView.trailingAnchor, constant: -20),
+            starredImageView.heightAnchor.constraint(equalToConstant: 30),
+            starredImageView.widthAnchor.constraint(equalToConstant: 30),
             
-            openingHoursLabel.bottomAnchor.constraint(equalTo: self.containerView.bottomAnchor, constant: -10),
-            openingHoursLabel.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor, constant: 15),
+            descriptionLabel.centerYAnchor.constraint(equalTo: self.containerView.centerYAnchor),
+            descriptionLabel.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor, constant: 15),
+            
+            membersImageView.bottomAnchor.constraint(equalTo: self.containerView.bottomAnchor, constant: -10),
+            membersImageView.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor, constant: 15),
+            
+            membersLabel.bottomAnchor.constraint(equalTo: self.containerView.bottomAnchor, constant: -11),
+            membersLabel.leadingAnchor.constraint(equalTo: self.membersImageView.trailingAnchor, constant: 5),
         ]
         NSLayoutConstraint.activate(constraints)
     
@@ -103,19 +119,21 @@ class ChannelTableViewCell: UITableViewCell {
         img.contentMode = .scaleAspectFill // image will never be strecthed vertially or horizontally
         img.translatesAutoresizingMaskIntoConstraints = false
         img.clipsToBounds = true
+        img.layer.cornerRadius = 10
+        img.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
         return img
     }()
     
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
         return label
     }()
     
-    let addressLabel: UILabel = {
+    let descriptionLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = .black
@@ -125,12 +143,27 @@ class ChannelTableViewCell: UITableViewCell {
         return label
     }()
     
-    let openingHoursLabel: UILabel = {
+    let membersLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
+    }()
+    
+    var membersImageView: UIImageView = {
+        let view = UIImageView()
+        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.image = UIImage(named: "members")
+        return view
+    }()
+    
+    var starredImageView: UIImageView = {
+        let view = UIImageView()
+        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
 }

@@ -134,6 +134,8 @@
 		729C49002A50E38E00D3AAB9 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C48FF2A50E38E00D3AAB9 /* Channel.swift */; };
 		729C49022A50E3A000D3AAB9 /* ChannelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49012A50E3A000D3AAB9 /* ChannelAPI.swift */; };
 		729C49042A50E3B600D3AAB9 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49032A50E3B600D3AAB9 /* ChannelTableViewCell.swift */; };
+		729C49062A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49052A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift */; };
+		729C49082A512AD000D3AAB9 /* DummyChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49072A512AD000D3AAB9 /* DummyChannelViewController.swift */; };
 		72AA7EC42A0D5EA800524337 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */; };
 		72AA7EC62A0D5ECB00524337 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */; };
 		8DC4D8CFAAD44B2089F284E0 /* Pods_LifeTomorrow_Caregiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F703EB45945D0C1289B3C9C8 /* Pods_LifeTomorrow_Caregiver.framework */; };
@@ -270,6 +272,8 @@
 		729C48FF2A50E38E00D3AAB9 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		729C49012A50E3A000D3AAB9 /* ChannelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAPI.swift; sourceTree = "<group>"; };
 		729C49032A50E3B600D3AAB9 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
+		729C49052A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDirectMessageViewController.swift; sourceTree = "<group>"; };
+		729C49072A512AD000D3AAB9 /* DummyChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyChannelViewController.swift; sourceTree = "<group>"; };
 		72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		7DD72A7872F6DA811A0D8A91 /* Pods-LifeTomorrow Caregiver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrow Caregiver.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrow Caregiver/Pods-LifeTomorrow Caregiver.release.xcconfig"; sourceTree = "<group>"; };
@@ -695,6 +699,7 @@
 				729C48F62A50D6BA00D3AAB9 /* DirectMessage.swift */,
 				729C48FB2A50D72200D3AAB9 /* DirectMessageAPI.swift */,
 				729C48FD2A50D73D00D3AAB9 /* DirectMessageTableViewCell.swift */,
+				729C49052A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift */,
 			);
 			path = DirectMessage;
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 				729C48FF2A50E38E00D3AAB9 /* Channel.swift */,
 				729C49012A50E3A000D3AAB9 /* ChannelAPI.swift */,
 				729C49032A50E3B600D3AAB9 /* ChannelTableViewCell.swift */,
+				729C49072A512AD000D3AAB9 /* DummyChannelViewController.swift */,
 			);
 			path = Channel;
 			sourceTree = "<group>";
@@ -928,6 +934,7 @@
 				720804512A09B2F0001E154B /* ATCChatUserStoryAdapter.swift in Sources */,
 				720804A22A09B2F1001E154B /* ConstraintLayoutGuideDSL.swift in Sources */,
 				720804582A09B2F0001E154B /* ATCThreadCollectionViewCell.swift in Sources */,
+				729C49062A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift in Sources */,
 				7208049F2A09B2F1001E154B /* ConstraintMakerEditable.swift in Sources */,
 				729567E32A423B230097B156 /* VideoCell.swift in Sources */,
 				720804A72A09B2F1001E154B /* ConstraintRelatableTarget.swift in Sources */,
@@ -935,6 +942,7 @@
 				720804522A09B2F0001E154B /* ATCChatThreadAdapter.swift in Sources */,
 				7208045D2A09B2F0001E154B /* ATCUser.swift in Sources */,
 				729C49022A50E3A000D3AAB9 /* ChannelAPI.swift in Sources */,
+				729C49082A512AD000D3AAB9 /* DummyChannelViewController.swift in Sources */,
 				729C48F72A50D6BA00D3AAB9 /* DirectMessage.swift in Sources */,
 				7208045F2A09B2F0001E154B /* Date.swift in Sources */,
 				724F7F762A44DC0F003A7521 /* Colors.swift in Sources */,

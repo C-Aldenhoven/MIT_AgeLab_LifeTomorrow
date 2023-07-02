@@ -17,11 +17,11 @@ class ResourceTableViewCell: UITableViewCell {
             }
             
             if let address = resourceItem.address {
-                addressLabel.text = " \(address) "
+                addressLabel.text = "\(address) "
             }
             
             if let openingHours = resourceItem.openingHours {
-                openingHoursLabel.text = " \(openingHours) "
+                openingHoursLabel.text = "\(openingHours) "
             }
             
             cellImageView.image = UIImage(named: "dummyFinderImage")
@@ -103,6 +103,8 @@ class ResourceTableViewCell: UITableViewCell {
         img.contentMode = .scaleAspectFill // image will never be strecthed vertially or horizontally
         img.translatesAutoresizingMaskIntoConstraints = false
         img.clipsToBounds = true
+        img.layer.cornerRadius = 10
+        img.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
         return img
     }()
     

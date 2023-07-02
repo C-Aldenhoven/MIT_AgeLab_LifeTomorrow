@@ -10,10 +10,9 @@ import Foundation
 class ChannelAPI {
     static func getChannels() -> [Channel]{
         let channel = [
-            Channel(name: "Channel", address: "32 Imaginary Lane,\n Cambridge, MA", openingHours: "Open from 11 to 5"),
-            Channel(name: "Cambridge Care Center", address: "2 Imagine Road,\n Boston, MA", openingHours: "Open - Closes 7 PM"),
-            Channel(name: "Lawyer Rick Burton", address: "111 LalaLand Street,\n Cambridge, MA", openingHours: "Open - Closes 5 PM"),
-            Channel(name: "Stay Young Fitness", address: "23 FeelTwentyThree Ave,\n Boston, MA", openingHours: "Open from 9 to 7")
+            Channel(name: "Mental Health", description: "A place to share about a challenging\nday and provide support to others\nwhen you can.", members: 245, starred: true),
+            Channel(name: "Remote Care", description: "Share tips and tricks about remote\ncaregiving and maybe learn\nsomething new!", members: 503, starred: false),
+            Channel(name: "Dementia", description: "Hear and share experiences caring\nfor someone with dementia.", members: 118, starred: false)
         ]
         return channel
     }

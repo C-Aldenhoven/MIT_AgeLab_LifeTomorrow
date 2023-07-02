@@ -17,11 +17,11 @@ class BlogTableViewCell: UITableViewCell {
             }
             
             if let summary = blogItem.summary {
-                summaryLabel.text = " \(summary) "
+                summaryLabel.text = "\(summary) "
             }
             
             if let readingDuration = blogItem.readingDuration {
-                readingDurationLabel.text = " \(readingDuration) "
+                readingDurationLabel.text = "\(readingDuration) "
             }
         }
     }

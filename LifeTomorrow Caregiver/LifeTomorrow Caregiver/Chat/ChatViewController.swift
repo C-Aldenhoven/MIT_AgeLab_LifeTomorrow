@@ -52,6 +52,8 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         searchController.hidesNavigationBarDuringPresentation = true
         searchController.obscuresBackgroundDuringPresentation = false
         
+        self.tabBarController?.tabBar.isHidden = false
+        
     }
     
     // MARK: Search
@@ -104,7 +106,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }()
     
     private var segmentedControl: UISegmentedControl = {
-        let control = UISegmentedControl (items: ["Direct Messages","Channes"])
+        let control = UISegmentedControl (items: ["Direct Messages","Channels"])
         control.selectedSegmentIndex = 0
         control.addTarget(self, action: #selector(segmentedValueChanged), for: .valueChanged)
         control.translatesAutoresizingMaskIntoConstraints = false
@@ -148,6 +150,23 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
             return 210
         } else {
             return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if segmentedControl.selectedSegmentIndex == 0 {
+            let currentCell = tableView.cellForRow(at: indexPath) as! DirectMessageTableViewCell
+            if currentCell.nameLabel.text != nil {
+                let dummyChatImage = UIImage(named: "dummyChat" + "\(currentCell.nameLabel.text!)")
+                navigationController?.pushViewController(DummyDirectMessageViewController(image: dummyChatImage!), animated: true)
+            }
+        } else if segmentedControl.selectedSegmentIndex == 1 {
+            let currentCell = tableView.cellForRow(at: indexPath) as! ChannelTableViewCell
+            if currentCell.nameLabel.text != nil {
+                let dummyChatImage = UIImage(named: "dummyChannel" + "\(currentCell.nameLabel.text!)")
+                navigationController?.pushViewController(DummyChannelViewController(image: dummyChatImage!, channelName: "\(currentCell.nameLabel.text!)"), animated: true)
+            }
         }
     }
     

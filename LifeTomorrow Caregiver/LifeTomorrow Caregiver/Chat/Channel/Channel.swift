@@ -9,6 +9,7 @@ import Foundation
 
 struct Channel {
     let name: String?
-    let address: String?
-    let openingHours: String?
+    let description: String?
+    let members: Int?
+    let starred: Bool?
 }

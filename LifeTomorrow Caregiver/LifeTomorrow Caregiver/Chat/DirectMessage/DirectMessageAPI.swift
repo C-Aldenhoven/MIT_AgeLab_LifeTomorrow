@@ -10,10 +10,10 @@ import Foundation
 class DirectMessageAPI {
     static func getDirectMessages() -> [DirectMessage]{
         let directMessage = [
-            DirectMessage(name: "Direct Message", address: "32 Imaginary Lane,\n Cambridge, MA", openingHours: "Open from 11 to 5"),
-            DirectMessage(name: "Cambridge Care Center", address: "2 Imagine Road,\n Boston, MA", openingHours: "Open - Closes 7 PM"),
-            DirectMessage(name: "Lawyer Rick Burton", address: "111 LalaLand Street,\n Cambridge, MA", openingHours: "Open - Closes 5 PM"),
-            DirectMessage(name: "Stay Young Fitness", address: "23 FeelTwentyThree Ave,\n Boston, MA", openingHours: "Open from 9 to 7")
+            DirectMessage(name: "Jane", lastMessage: "Where did you find that resource\nagain?", lastMessageTime: "9:32 AM", unread: true),
+            DirectMessage(name: "Marta", lastMessage: "How was the trip to the doctor?", lastMessageTime: "8:23 AM", unread: true),
+            DirectMessage(name: "Jamaal", lastMessage: "You: I hope everything is going\nwell!", lastMessageTime: "Yesterday", unread: false),
+            DirectMessage(name: "Michael", lastMessage: "I just had a pretty bad day :(", lastMessageTime: "Tuesday", unread: false)
         ]
         return directMessage
     }

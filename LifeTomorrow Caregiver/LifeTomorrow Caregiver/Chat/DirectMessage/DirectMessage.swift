@@ -9,6 +9,7 @@ import Foundation
 
 struct DirectMessage {
     let name: String?
-    let address: String?
-    let openingHours: String?
+    let lastMessage: String?
+    let lastMessageTime: String?
+    let unread: Bool?
 }
