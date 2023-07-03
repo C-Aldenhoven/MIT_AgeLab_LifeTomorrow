@@ -1,5 +1,5 @@
 //
-//  DummyDirectMessageViewController.swift
+//  DummySingleImageViewController.swift
 //  LifeTomorrow Caregiver
 //
 //  Created by Céline Aldenhoven on 01.07.23.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DummyDirectMessageViewController: UIViewController {
+class DummySingleImageViewController: UIViewController {
     
     init(image: UIImage) {
         imageView.image = image

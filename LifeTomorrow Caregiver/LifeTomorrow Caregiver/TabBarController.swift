@@ -58,6 +58,8 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.tabBar.layer.shadowOpacity = 0.5
         self.tabBar.layer.shadowRadius = 20
     
+        setupMiddleButton()
+        
     }
     
     // MARK: - Setups

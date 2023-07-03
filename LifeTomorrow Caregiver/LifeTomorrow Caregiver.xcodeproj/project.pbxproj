@@ -134,8 +134,16 @@
 		729C49002A50E38E00D3AAB9 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C48FF2A50E38E00D3AAB9 /* Channel.swift */; };
 		729C49022A50E3A000D3AAB9 /* ChannelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49012A50E3A000D3AAB9 /* ChannelAPI.swift */; };
 		729C49042A50E3B600D3AAB9 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49032A50E3B600D3AAB9 /* ChannelTableViewCell.swift */; };
-		729C49062A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49052A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift */; };
-		729C49082A512AD000D3AAB9 /* DummyChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49072A512AD000D3AAB9 /* DummyChannelViewController.swift */; };
+		729C49062A512A1A00D3AAB9 /* DummySingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49052A512A1A00D3AAB9 /* DummySingleImageViewController.swift */; };
+		729C490B2A5206E000D3AAB9 /* DummyMentalHealthChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C490A2A5206E000D3AAB9 /* DummyMentalHealthChannelViewController.swift */; };
+		729C490D2A5206F900D3AAB9 /* DummyRemoteCareChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C490C2A5206F900D3AAB9 /* DummyRemoteCareChannelViewController.swift */; };
+		729C490F2A52070A00D3AAB9 /* DummyDementiaChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C490E2A52070A00D3AAB9 /* DummyDementiaChannelViewController.swift */; };
+		729C49162A5267FF00D3AAB9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49152A5267FF00D3AAB9 /* Post.swift */; };
+		729C49182A52684A00D3AAB9 /* MentalHealthPostsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49172A52684A00D3AAB9 /* MentalHealthPostsAPI.swift */; };
+		729C491A2A5268C600D3AAB9 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49192A5268C600D3AAB9 /* PostTableViewCell.swift */; };
+		729C491C2A527D0F00D3AAB9 /* NewPostCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C491B2A527D0F00D3AAB9 /* NewPostCreationView.swift */; };
+		729C491E2A5282A700D3AAB9 /* RemoteCarePostsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C491D2A5282A700D3AAB9 /* RemoteCarePostsAPI.swift */; };
+		729C49202A5282B900D3AAB9 /* DementiaPostsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C491F2A5282B900D3AAB9 /* DementiaPostsAPI.swift */; };
 		72AA7EC42A0D5EA800524337 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */; };
 		72AA7EC62A0D5ECB00524337 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */; };
 		8DC4D8CFAAD44B2089F284E0 /* Pods_LifeTomorrow_Caregiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F703EB45945D0C1289B3C9C8 /* Pods_LifeTomorrow_Caregiver.framework */; };
@@ -272,8 +280,16 @@
 		729C48FF2A50E38E00D3AAB9 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		729C49012A50E3A000D3AAB9 /* ChannelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAPI.swift; sourceTree = "<group>"; };
 		729C49032A50E3B600D3AAB9 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
-		729C49052A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDirectMessageViewController.swift; sourceTree = "<group>"; };
-		729C49072A512AD000D3AAB9 /* DummyChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyChannelViewController.swift; sourceTree = "<group>"; };
+		729C49052A512A1A00D3AAB9 /* DummySingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySingleImageViewController.swift; sourceTree = "<group>"; };
+		729C490A2A5206E000D3AAB9 /* DummyMentalHealthChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyMentalHealthChannelViewController.swift; sourceTree = "<group>"; };
+		729C490C2A5206F900D3AAB9 /* DummyRemoteCareChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRemoteCareChannelViewController.swift; sourceTree = "<group>"; };
+		729C490E2A52070A00D3AAB9 /* DummyDementiaChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDementiaChannelViewController.swift; sourceTree = "<group>"; };
+		729C49152A5267FF00D3AAB9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		729C49172A52684A00D3AAB9 /* MentalHealthPostsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthPostsAPI.swift; sourceTree = "<group>"; };
+		729C49192A5268C600D3AAB9 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		729C491B2A527D0F00D3AAB9 /* NewPostCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostCreationView.swift; sourceTree = "<group>"; };
+		729C491D2A5282A700D3AAB9 /* RemoteCarePostsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCarePostsAPI.swift; sourceTree = "<group>"; };
+		729C491F2A5282B900D3AAB9 /* DementiaPostsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DementiaPostsAPI.swift; sourceTree = "<group>"; };
 		72AA7EC32A0D5EA800524337 /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		72AA7EC52A0D5ECB00524337 /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		7DD72A7872F6DA811A0D8A91 /* Pods-LifeTomorrow Caregiver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrow Caregiver.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrow Caregiver/Pods-LifeTomorrow Caregiver.release.xcconfig"; sourceTree = "<group>"; };
@@ -577,7 +593,9 @@
 				729C48FA2A50D70400D3AAB9 /* Channel */,
 				729C48F82A50D6CC00D3AAB9 /* DirectMessage */,
 				720804B92A0AC497001E154B /* ChatViewController.swift */,
+				729C49052A512A1A00D3AAB9 /* DummySingleImageViewController.swift */,
 				720803DB2A09B2EE001E154B /* Core */,
+				729C491B2A527D0F00D3AAB9 /* NewPostCreationView.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -699,7 +717,6 @@
 				729C48F62A50D6BA00D3AAB9 /* DirectMessage.swift */,
 				729C48FB2A50D72200D3AAB9 /* DirectMessageAPI.swift */,
 				729C48FD2A50D73D00D3AAB9 /* DirectMessageTableViewCell.swift */,
-				729C49052A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift */,
 			);
 			path = DirectMessage;
 			sourceTree = "<group>";
@@ -707,12 +724,51 @@
 		729C48FA2A50D70400D3AAB9 /* Channel */ = {
 			isa = PBXGroup;
 			children = (
+				729C49092A5206B400D3AAB9 /* DummyChannelViewControllers */,
 				729C48FF2A50E38E00D3AAB9 /* Channel.swift */,
 				729C49012A50E3A000D3AAB9 /* ChannelAPI.swift */,
 				729C49032A50E3B600D3AAB9 /* ChannelTableViewCell.swift */,
-				729C49072A512AD000D3AAB9 /* DummyChannelViewController.swift */,
 			);
 			path = Channel;
+			sourceTree = "<group>";
+		};
+		729C49092A5206B400D3AAB9 /* DummyChannelViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				729C49122A52675800D3AAB9 /* Dementia */,
+				729C49112A52674F00D3AAB9 /* Remote Care */,
+				729C49102A52673D00D3AAB9 /* MentalHealth */,
+				729C49152A5267FF00D3AAB9 /* Post.swift */,
+				729C49192A5268C600D3AAB9 /* PostTableViewCell.swift */,
+			);
+			path = DummyChannelViewControllers;
+			sourceTree = "<group>";
+		};
+		729C49102A52673D00D3AAB9 /* MentalHealth */ = {
+			isa = PBXGroup;
+			children = (
+				729C490A2A5206E000D3AAB9 /* DummyMentalHealthChannelViewController.swift */,
+				729C49172A52684A00D3AAB9 /* MentalHealthPostsAPI.swift */,
+			);
+			path = MentalHealth;
+			sourceTree = "<group>";
+		};
+		729C49112A52674F00D3AAB9 /* Remote Care */ = {
+			isa = PBXGroup;
+			children = (
+				729C490C2A5206F900D3AAB9 /* DummyRemoteCareChannelViewController.swift */,
+				729C491D2A5282A700D3AAB9 /* RemoteCarePostsAPI.swift */,
+			);
+			path = "Remote Care";
+			sourceTree = "<group>";
+		};
+		729C49122A52675800D3AAB9 /* Dementia */ = {
+			isa = PBXGroup;
+			children = (
+				729C490E2A52070A00D3AAB9 /* DummyDementiaChannelViewController.swift */,
+				729C491F2A5282B900D3AAB9 /* DementiaPostsAPI.swift */,
+			);
+			path = Dementia;
 			sourceTree = "<group>";
 		};
 		72AA7EC22A0D5E7D00524337 /* Study Supplements */ = {
@@ -881,6 +937,7 @@
 				7208048B2A09B2F0001E154B /* LayoutConstraintItem.swift in Sources */,
 				720804622A09B2F0001E154B /* UITextField.swift in Sources */,
 				720804682A09B2F0001E154B /* UIViewController+ATCAdditions.swift in Sources */,
+				729C491E2A5282A700D3AAB9 /* RemoteCarePostsAPI.swift in Sources */,
 				720804832A09B2F0001E154B /* ATCGenericLocalHeteroDataSource.swift in Sources */,
 				7208049A2A09B2F0001E154B /* ConstraintLayoutGuide.swift in Sources */,
 				7208045A2A09B2F0001E154B /* ATCChatMockStore.swift in Sources */,
@@ -891,6 +948,7 @@
 				7208046B2A09B2F0001E154B /* ATCMenuItemCollectionViewCellProtocol.swift in Sources */,
 				720804552A09B2F0001E154B /* ATCChatThreadsViewController.swift in Sources */,
 				720804A92A09B2F1001E154B /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				729C49182A52684A00D3AAB9 /* MentalHealthPostsAPI.swift in Sources */,
 				729C48FC2A50D72200D3AAB9 /* DirectMessageAPI.swift in Sources */,
 				720804642A09B2F0001E154B /* UIImage.swift in Sources */,
 				720804652A09B2F0001E154B /* ATCStoryAdapter.swift in Sources */,
@@ -934,29 +992,34 @@
 				720804512A09B2F0001E154B /* ATCChatUserStoryAdapter.swift in Sources */,
 				720804A22A09B2F1001E154B /* ConstraintLayoutGuideDSL.swift in Sources */,
 				720804582A09B2F0001E154B /* ATCThreadCollectionViewCell.swift in Sources */,
-				729C49062A512A1A00D3AAB9 /* DummyDirectMessageViewController.swift in Sources */,
+				729C49062A512A1A00D3AAB9 /* DummySingleImageViewController.swift in Sources */,
 				7208049F2A09B2F1001E154B /* ConstraintMakerEditable.swift in Sources */,
+				729C491A2A5268C600D3AAB9 /* PostTableViewCell.swift in Sources */,
 				729567E32A423B230097B156 /* VideoCell.swift in Sources */,
 				720804A72A09B2F1001E154B /* ConstraintRelatableTarget.swift in Sources */,
+				729C490F2A52070A00D3AAB9 /* DummyDementiaChannelViewController.swift in Sources */,
 				729C49042A50E3B600D3AAB9 /* ChannelTableViewCell.swift in Sources */,
 				720804522A09B2F0001E154B /* ATCChatThreadAdapter.swift in Sources */,
 				7208045D2A09B2F0001E154B /* ATCUser.swift in Sources */,
 				729C49022A50E3A000D3AAB9 /* ChannelAPI.swift in Sources */,
-				729C49082A512AD000D3AAB9 /* DummyChannelViewController.swift in Sources */,
 				729C48F72A50D6BA00D3AAB9 /* DirectMessage.swift in Sources */,
 				7208045F2A09B2F0001E154B /* Date.swift in Sources */,
 				724F7F762A44DC0F003A7521 /* Colors.swift in Sources */,
 				724F7F662A436147003A7521 /* Blog.swift in Sources */,
 				720804BC2A0AC4B3001E154B /* CaregivingViewController.swift in Sources */,
 				726FB23E2A0164DD0077B990 /* LifeTomorrow_Caregiver.xcdatamodeld in Sources */,
+				729C49162A5267FF00D3AAB9 /* Post.swift in Sources */,
 				720804912A09B2F0001E154B /* ConstraintInsets.swift in Sources */,
 				720804892A09B2F0001E154B /* UIImage+ATCAdditions.swift in Sources */,
+				729C490D2A5206F900D3AAB9 /* DummyRemoteCareChannelViewController.swift in Sources */,
+				729C490B2A5206E000D3AAB9 /* DummyMentalHealthChannelViewController.swift in Sources */,
 				720804A62A09B2F1001E154B /* Debugging.swift in Sources */,
 				720804672A09B2F0001E154B /* ATCCarouselAdapter.swift in Sources */,
 				720804AA2A09B2F1001E154B /* ConstraintLayoutSupportDSL.swift in Sources */,
 				72AA7EC42A0D5EA800524337 /* ConsentDocument.swift in Sources */,
 				7208047E2A09B2F0001E154B /* ATCMessengerUserAdapter.swift in Sources */,
 				720804A42A09B2F1001E154B /* ConstraintItem.swift in Sources */,
+				729C49202A5282B900D3AAB9 /* DementiaPostsAPI.swift in Sources */,
 				720804902A09B2F0001E154B /* ConstraintPriorityTarget.swift in Sources */,
 				720804592A09B2F0001E154B /* ATCUserStoryCollectionViewCell.swift in Sources */,
 				7208047F2A09B2F0001E154B /* ATCCarouselCollectionViewCell.swift in Sources */,
@@ -975,6 +1038,7 @@
 				7208048E2A09B2F0001E154B /* ConstraintAttributes.swift in Sources */,
 				720804862A09B2F0001E154B /* UITabBarItem+ATCAdditions.swift in Sources */,
 				720804C12A0AC4EA001E154B /* HomeViewController.swift in Sources */,
+				729C491C2A527D0F00D3AAB9 /* NewPostCreationView.swift in Sources */,
 				7208048C2A09B2F0001E154B /* ConstraintDescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

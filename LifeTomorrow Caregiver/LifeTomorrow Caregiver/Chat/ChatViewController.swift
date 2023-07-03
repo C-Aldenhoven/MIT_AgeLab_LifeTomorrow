@@ -159,13 +159,20 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let currentCell = tableView.cellForRow(at: indexPath) as! DirectMessageTableViewCell
             if currentCell.nameLabel.text != nil {
                 let dummyChatImage = UIImage(named: "dummyChat" + "\(currentCell.nameLabel.text!)")
-                navigationController?.pushViewController(DummyDirectMessageViewController(image: dummyChatImage!), animated: true)
+                navigationController?.pushViewController(DummySingleImageViewController(image: dummyChatImage!), animated: true)
             }
         } else if segmentedControl.selectedSegmentIndex == 1 {
             let currentCell = tableView.cellForRow(at: indexPath) as! ChannelTableViewCell
             if currentCell.nameLabel.text != nil {
-                let dummyChatImage = UIImage(named: "dummyChannel" + "\(currentCell.nameLabel.text!)")
-                navigationController?.pushViewController(DummyChannelViewController(image: dummyChatImage!, channelName: "\(currentCell.nameLabel.text!)"), animated: true)
+                if currentCell.nameLabel.text == "Mental Health" {
+                    navigationController?.pushViewController(DummyMentalHealthChannelViewController(), animated: true)
+                }
+                else if currentCell.nameLabel.text == "Remote Care" {
+                    navigationController?.pushViewController(DummyRemoteCareChannelViewController(), animated: true)
+                }
+                else if currentCell.nameLabel.text == "Dementia" {
+                    navigationController?.pushViewController(DummyDementiaChannelViewController(), animated: true)
+                }
             }
         }
     }

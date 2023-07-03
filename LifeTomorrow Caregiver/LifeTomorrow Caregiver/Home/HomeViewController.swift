@@ -33,20 +33,20 @@ class HomeViewController: UIViewController {
             profileButton.heightAnchor.constraint(equalToConstant: 50),
             profileButton.widthAnchor.constraint(equalToConstant: 50),
             
-            careButton.topAnchor.constraint(equalTo: topTitleLabel.bottomAnchor, constant: 5),
+            careButton.topAnchor.constraint(equalTo: topTitleLabel.bottomAnchor, constant: 25),
             careButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
             careButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor),
-            careButton.heightAnchor.constraint(equalToConstant: 310),
+            careButton.heightAnchor.constraint(equalToConstant: 300),
             
             chatButton.topAnchor.constraint(equalTo: careButton.bottomAnchor, constant: -20),
             chatButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
             chatButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor),
-            chatButton.heightAnchor.constraint(equalToConstant: 130),
+            chatButton.heightAnchor.constraint(equalToConstant: 120),
             
             infoButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -10),
             infoButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
             infoButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor),
-            infoButton.heightAnchor.constraint(equalToConstant: 230)
+            infoButton.heightAnchor.constraint(equalToConstant: 220)
         ])
         
         self.navigationController?.navigationBar.isHidden = true
