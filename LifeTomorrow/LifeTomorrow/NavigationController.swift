@@ -15,14 +15,10 @@ class NavigationController: UINavigationController {
         super.viewDidLoad()
         
         // MARK: Customize NavigationBar
-        
-        let navigationBarAppearence = UINavigationBarAppearance()
-        navigationBarAppearence.shadowColor = .clear
-        navigationBarAppearence.backgroundColor = .white
-        navigationBar.standardAppearance = navigationBarAppearence
-        navigationBar.scrollEdgeAppearance = navigationBarAppearence
-        
-        defaultAppearance = navigationBarAppearence
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+
+        UINavigationBar.appearance().standardAppearance = appearance
     }
     
     public func resetToDefaultAppearance() {

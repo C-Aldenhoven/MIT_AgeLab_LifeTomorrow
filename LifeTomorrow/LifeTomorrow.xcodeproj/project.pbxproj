@@ -32,6 +32,12 @@
 		726FB29A2A0440450077B990 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FB2992A0440450077B990 /* ContentView.swift */; };
 		726FB29C2A0440470077B990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB29B2A0440470077B990 /* Assets.xcassets */; };
 		726FB29F2A0440470077B990 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726FB29E2A0440470077B990 /* Preview Assets.xcassets */; };
+		729C49272A53628400D3AAB9 /* DummyHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49262A53628400D3AAB9 /* DummyHealthViewController.swift */; };
+		729C49292A5362CF00D3AAB9 /* DummyDataSharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49282A5362CF00D3AAB9 /* DummyDataSharingViewController.swift */; };
+		729C492B2A5362E200D3AAB9 /* DummyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C492A2A5362E200D3AAB9 /* DummyProfileViewController.swift */; };
+		729C492D2A5362FA00D3AAB9 /* DummySmartHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C492C2A5362FA00D3AAB9 /* DummySmartHomeViewController.swift */; };
+		729C492F2A53A6CA00D3AAB9 /* DummyJoeContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C492E2A53A6CA00D3AAB9 /* DummyJoeContactViewController.swift */; };
+		729C49312A53A6DC00D3AAB9 /* DummyRachaelContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C49302A53A6DC00D3AAB9 /* DummyRachaelContactViewController.swift */; };
 		72AA7EC92A13EE6400524337 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AA7EC82A13EE6400524337 /* Colors.xcassets */; };
 		72AA7EED2A1D58BC00524337 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EEC2A1D58BC00524337 /* BaseCollectionViewController.swift */; };
 		72AA7EEF2A1D590D00524337 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EEE2A1D590D00524337 /* HomeCell.swift */; };
@@ -70,6 +76,12 @@
 		726FB2992A0440450077B990 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		726FB29B2A0440470077B990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726FB29E2A0440470077B990 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		729C49262A53628400D3AAB9 /* DummyHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHealthViewController.swift; sourceTree = "<group>"; };
+		729C49282A5362CF00D3AAB9 /* DummyDataSharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDataSharingViewController.swift; sourceTree = "<group>"; };
+		729C492A2A5362E200D3AAB9 /* DummyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyProfileViewController.swift; sourceTree = "<group>"; };
+		729C492C2A5362FA00D3AAB9 /* DummySmartHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySmartHomeViewController.swift; sourceTree = "<group>"; };
+		729C492E2A53A6CA00D3AAB9 /* DummyJoeContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyJoeContactViewController.swift; sourceTree = "<group>"; };
+		729C49302A53A6DC00D3AAB9 /* DummyRachaelContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRachaelContactViewController.swift; sourceTree = "<group>"; };
 		72AA7EC82A13EE6400524337 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		72AA7EE82A1D29C700524337 /* LifeTomorrowRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeTomorrowRelease.entitlements; sourceTree = "<group>"; };
 		72AA7EEC2A1D58BC00524337 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +166,7 @@
 		726FB2552A01655E0077B990 /* LifeTomorrow */ = {
 			isa = PBXGroup;
 			children = (
+				729C49212A5361FD00D3AAB9 /* Dummies */,
 				72AA7EE82A1D29C700524337 /* LifeTomorrowRelease.entitlements */,
 				720804C82A0AD28B001E154B /* Study Supplements */,
 				720803B22A09700E001E154B /* GoogleService-Info.plist */,
@@ -237,6 +250,51 @@
 				726FB29E2A0440470077B990 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		729C49212A5361FD00D3AAB9 /* Dummies */ = {
+			isa = PBXGroup;
+			children = (
+				729C49252A53623300D3AAB9 /* Health */,
+				729C49242A53622A00D3AAB9 /* Data Sharing */,
+				729C49232A53622300D3AAB9 /* Profile */,
+				729C49222A53621B00D3AAB9 /* Smart Home */,
+			);
+			path = Dummies;
+			sourceTree = "<group>";
+		};
+		729C49222A53621B00D3AAB9 /* Smart Home */ = {
+			isa = PBXGroup;
+			children = (
+				729C492C2A5362FA00D3AAB9 /* DummySmartHomeViewController.swift */,
+			);
+			path = "Smart Home";
+			sourceTree = "<group>";
+		};
+		729C49232A53622300D3AAB9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				729C492A2A5362E200D3AAB9 /* DummyProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		729C49242A53622A00D3AAB9 /* Data Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				729C49282A5362CF00D3AAB9 /* DummyDataSharingViewController.swift */,
+				729C492E2A53A6CA00D3AAB9 /* DummyJoeContactViewController.swift */,
+				729C49302A53A6DC00D3AAB9 /* DummyRachaelContactViewController.swift */,
+			);
+			path = "Data Sharing";
+			sourceTree = "<group>";
+		};
+		729C49252A53623300D3AAB9 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				729C49262A53628400D3AAB9 /* DummyHealthViewController.swift */,
+			);
+			path = Health;
 			sourceTree = "<group>";
 		};
 		958C05332C45ADEA864B1679 /* Frameworks */ = {
@@ -432,15 +490,20 @@
 				72AA7EF32A1D593700524337 /* AccessoryCell.swift in Sources */,
 				720805082A0AFAAC001E154B /* UIColor.swift in Sources */,
 				72AA7EEF2A1D590D00524337 /* HomeCell.swift in Sources */,
+				729C492D2A5362FA00D3AAB9 /* DummySmartHomeViewController.swift in Sources */,
+				729C49312A53A6DC00D3AAB9 /* DummyRachaelContactViewController.swift in Sources */,
 				720803D62A09763E001E154B /* HealthViewController.swift in Sources */,
 				726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */,
 				726FB2882A0424BB0077B990 /* NavigationController.swift in Sources */,
+				729C49272A53628400D3AAB9 /* DummyHealthViewController.swift in Sources */,
 				7208050F2A0BFC8D001E154B /* AsessmentTaskFactory.swift in Sources */,
 				720803D42A097628001E154B /* CarePlanViewController.swift in Sources */,
 				726FB2592A01655E0077B990 /* SceneDelegate.swift in Sources */,
 				7208050A2A0AFAD1001E154B /* DataHelpers.swift in Sources */,
+				729C492F2A53A6CA00D3AAB9 /* DummyJoeContactViewController.swift in Sources */,
 				720803D22A097612001E154B /* DataSharingAndProfileViewController.swift in Sources */,
 				72AA7EED2A1D58BC00524337 /* BaseCollectionViewController.swift in Sources */,
+				729C49292A5362CF00D3AAB9 /* DummyDataSharingViewController.swift in Sources */,
 				720805062A0AFA99001E154B /* NSDateComponents.swift in Sources */,
 				720803D82A09893B001E154B /* LoginViewController.swift in Sources */,
 				720804CE2A0AF509001E154B /* CarePlanStorageManager.swift in Sources */,
@@ -448,6 +511,7 @@
 				7208050D2A0B026F001E154B /* CarePlanData.swift in Sources */,
 				720803D02A0975FE001E154B /* SmartHomeViewController.swift in Sources */,
 				720804CA2A0AD2C3001E154B /* ConsentDocument.swift in Sources */,
+				729C492B2A5362E200D3AAB9 /* DummyProfileViewController.swift in Sources */,
 				72AA7EF12A1D592100524337 /* AccessoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

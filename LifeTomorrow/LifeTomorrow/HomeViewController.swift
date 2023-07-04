@@ -15,37 +15,41 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(named: "backgroundColor")
+        view.addSubview(topTitleLabel)
         view.addSubview(smartHomeButton)
         view.addSubview(healthButton)
-        view.addSubview(dataSharingAndProfileButton)
-        view.addSubview(carePlanButton)
-        
-        let guide = self.view.safeAreaLayoutGuide
+        view.addSubview(dataSharingButton)
+        view.addSubview(profileButton)
         
         let constraints = [
-            smartHomeButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 20),
-            smartHomeButton.bottomAnchor.constraint(equalTo: guide.centerYAnchor, constant: -20),
-            smartHomeButton.leftAnchor.constraint(equalTo: guide.leftAnchor, constant: 20),
-            smartHomeButton.rightAnchor.constraint(equalTo: guide.centerXAnchor, constant: -20),
+            topTitleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
+            topTitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 42),
+            topTitleLabel.widthAnchor.constraint(equalToConstant: 500),
+            topTitleLabel.heightAnchor.constraint(equalToConstant: 150),
             
-            healthButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 20),
-            healthButton.bottomAnchor.constraint(equalTo: guide.centerYAnchor, constant: -20),
-            healthButton.leftAnchor.constraint(equalTo: guide.centerXAnchor, constant: 20),
-            healthButton.rightAnchor.constraint(equalTo: guide.rightAnchor, constant: -20),
+            smartHomeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 170),
+            smartHomeButton.heightAnchor.constraint(equalToConstant: 320),
+            smartHomeButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
+            smartHomeButton.rightAnchor.constraint(equalTo: view.centerXAnchor),
             
-            dataSharingAndProfileButton.topAnchor.constraint(equalTo: guide.centerYAnchor, constant: 20),
-            dataSharingAndProfileButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -20),
-            dataSharingAndProfileButton.leftAnchor.constraint(equalTo: guide.leftAnchor, constant: 20),
-            dataSharingAndProfileButton.rightAnchor.constraint(equalTo: guide.centerXAnchor, constant: -20),
+            healthButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 170),
+            healthButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
+            healthButton.leftAnchor.constraint(equalTo: view.centerXAnchor),
+            healthButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
             
-            carePlanButton.topAnchor.constraint(equalTo: guide.centerYAnchor, constant: 20),
-            carePlanButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -20),
-            carePlanButton.leftAnchor.constraint(equalTo: guide.centerXAnchor, constant: 20),
-            carePlanButton.rightAnchor.constraint(equalTo: guide.rightAnchor, constant: -20),
+            dataSharingButton.heightAnchor.constraint(equalToConstant: 320),
+            dataSharingButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
+            dataSharingButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
+            dataSharingButton.rightAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            profileButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
+            profileButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -42),
+            profileButton.heightAnchor.constraint(equalToConstant: 50),
+            profileButton.widthAnchor.constraint(equalToConstant: 170)
         ]
         NSLayoutConstraint.activate(constraints)
         
-        self.navigationItem.titleView = topTitleLabel
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -58,29 +62,25 @@ class HomeViewController: UIViewController {
             present(taskViewController, animated: true, completion: nil)
             UserDefaults.standard.set(true, forKey: "ConsentSigned")
         }
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     // MARK: UI-Elements
     
     private var topTitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Welcome to LifeTomorrow!"
-        label.font = .systemFont(ofSize: 30)
+        label.text = "Welcome back, Michael!"
+        label.font = .boldSystemFont(ofSize: 40)
         label.textColor = .black
         label.textAlignment = .left
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private var smartHomeButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Smart Home", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
-        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
-        button.contentHorizontalAlignment = .center
-        button.contentVerticalAlignment = .bottom
-        button.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 23.0, right: 0.0)
+        button.setBackgroundImage(UIImage(named: "smartHomeButton"), for: .normal)
         button.layer.cornerRadius = 20
-        button.setBackgroundImage(UIImage(named: "smartHomeButtonBackground"), for: .normal)
         button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(smartHomeButtonAction), for: .touchUpInside)
@@ -89,64 +89,46 @@ class HomeViewController: UIViewController {
     
     private var healthButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Health", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
-        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
-        button.contentHorizontalAlignment = .center
-        button.contentVerticalAlignment = .bottom
-        button.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 23.0, right: 0.0)
+        button.setBackgroundImage(UIImage(named: "healthButton"), for: .normal)
         button.layer.cornerRadius = 20
-        button.setBackgroundImage(UIImage(named: "healthButtonBackground"), for: .normal)
         button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(healthButtonAction), for: .touchUpInside)
         return button
     }()
     
-    private var dataSharingAndProfileButton: UIButton = {
+    private var dataSharingButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Data Sharing & Profile", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
-        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
-        button.contentHorizontalAlignment = .center
-        button.contentVerticalAlignment = .bottom
-        button.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 23.0, right: 0.0)
+        button.setBackgroundImage(UIImage(named: "dataSharingButton"), for: .normal)
         button.layer.cornerRadius = 20
-        button.setBackgroundImage(UIImage(named: "dataSharingAndProfileButtonBackground"), for: .normal)
         button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(dataSharingAndProfileButtonAction), for: .touchUpInside)
+        button.addTarget(self, action: #selector(dataSharingButtonAction), for: .touchUpInside)
         return button
     }()
     
-    private var carePlanButton: UIButton = {
+    private var profileButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Care Plan", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
-        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
-        button.contentHorizontalAlignment = .center
-        button.contentVerticalAlignment = .bottom
-        button.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 23.0, right: 0.0)
-        button.layer.cornerRadius = 20
-        button.setBackgroundImage(UIImage(named: "carePlanButtonBackground"), for: .normal)
+        button.setBackgroundImage(UIImage(named: "profileButton"), for: .normal)
         button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(carePlanButtonAction), for: .touchUpInside)
+        button.addTarget(self, action: #selector(profileButtonAction), for: .touchUpInside)
         return button
     }()
     
     // MARK: Button Actions
     @objc private func smartHomeButtonAction() {
-        let layout = UICollectionViewFlowLayout()
-        navigationController?.pushViewController(SmartHomeViewController(collectionViewLayout: layout), animated: true)
+        navigationController?.pushViewController(DummySmartHomeViewController(), animated: true)
     }
     
     @objc private func healthButtonAction() {
-        navigationController?.pushViewController(HealthViewController(), animated: true)
+        navigationController?.pushViewController(DummyHealthViewController(), animated: true)
     }
     
-    @objc private func dataSharingAndProfileButtonAction() {
-        if Auth.auth().currentUser != nil {
+    @objc private func dataSharingButtonAction() {
+        navigationController?.pushViewController(DummyDataSharingViewController(), animated: true)
+        
+        /*if Auth.auth().currentUser != nil {
             // User is signed in.
             print("Navigation: Yes user is indeed signed in")
             navigationController?.pushViewController(DataSharingAndProfileViewController(), animated: true)
@@ -154,11 +136,11 @@ class HomeViewController: UIViewController {
             // No user is signed in.
             print("Navigation: No user is signed in")
             navigationController?.pushViewController(LoginViewController(), animated: true)
-        }
+        }*/
     }
     
-    @objc private func carePlanButtonAction() {
-        navigationController?.pushViewController(CarePlanViewController(), animated: true)
+    @objc private func profileButtonAction() {
+        navigationController?.pushViewController(DummyProfileViewController(), animated: true)
     }
 }
 
