@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
             topTitleLabel.heightAnchor.constraint(equalToConstant: 150),
             
             smartHomeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 170),
-            smartHomeButton.heightAnchor.constraint(equalToConstant: 320),
+            smartHomeButton.heightAnchor.constraint(equalToConstant: 295),
             smartHomeButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
             smartHomeButton.rightAnchor.constraint(equalTo: view.centerXAnchor),
             
@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
             healthButton.leftAnchor.constraint(equalTo: view.centerXAnchor),
             healthButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
             
-            dataSharingButton.heightAnchor.constraint(equalToConstant: 320),
+            dataSharingButton.heightAnchor.constraint(equalToConstant: 295),
             dataSharingButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
             dataSharingButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
             dataSharingButton.rightAnchor.constraint(equalTo: view.centerXAnchor),

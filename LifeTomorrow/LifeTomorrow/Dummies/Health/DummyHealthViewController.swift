@@ -39,53 +39,53 @@ class DummyHealthViewController: UIViewController {
             careTeamButton.heightAnchor.constraint(equalToConstant: 50),
             careTeamButton.widthAnchor.constraint(equalToConstant: 200),
             
-            dummyBloodOxygenButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 405),
-            dummyBloodOxygenButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-            dummyBloodOxygenButton.heightAnchor.constraint(equalToConstant: 155),
-            dummyBloodOxygenButton.widthAnchor.constraint(equalToConstant: 290),
-            
-            dummyHeartRateButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 220),
-            dummyHeartRateButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-            dummyHeartRateButton.heightAnchor.constraint(equalToConstant: 155),
-            dummyHeartRateButton.widthAnchor.constraint(equalToConstant: 290),
-            
             dummyStepsButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 40),
-            dummyStepsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-            dummyStepsButton.heightAnchor.constraint(equalToConstant: 155),
-            dummyStepsButton.widthAnchor.constraint(equalToConstant: 290),
+            dummyStepsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            dummyStepsButton.heightAnchor.constraint(equalToConstant: 145),
+            dummyStepsButton.widthAnchor.constraint(equalToConstant: 260),
             
-            dummyFallDetectionButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: 10),
-            dummyFallDetectionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-            dummyFallDetectionButton.heightAnchor.constraint(equalToConstant: 155),
-            dummyFallDetectionButton.widthAnchor.constraint(equalToConstant: 290),
+            dummyHeartRateButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 205),
+            dummyHeartRateButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            dummyHeartRateButton.heightAnchor.constraint(equalToConstant: 145),
+            dummyHeartRateButton.widthAnchor.constraint(equalToConstant: 260),
             
-            dummyCardioButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 150),
-            dummyCardioButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 395),
+            dummyBloodOxygenButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 380),
+            dummyBloodOxygenButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            dummyBloodOxygenButton.heightAnchor.constraint(equalToConstant: 145),
+            dummyBloodOxygenButton.widthAnchor.constraint(equalToConstant: 260),
+            
+            dummyFallDetectionButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -10),
+            dummyFallDetectionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            dummyFallDetectionButton.heightAnchor.constraint(equalToConstant: 145),
+            dummyFallDetectionButton.widthAnchor.constraint(equalToConstant: 260),
+            
+            dummyCardioButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 135),
+            dummyCardioButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 320),
             dummyCardioButton.heightAnchor.constraint(equalToConstant: 200),
             dummyCardioButton.widthAnchor.constraint(equalToConstant: 220),
             
-            dummyStretchButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 150),
-            dummyStretchButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -325),
+            dummyStretchButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 135),
+            dummyStretchButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -270),
             dummyStretchButton.heightAnchor.constraint(equalToConstant: 200),
             dummyStretchButton.widthAnchor.constraint(equalToConstant: 220),
             
-            seeAllActivitiesButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 150),
-            seeAllActivitiesButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -85),
+            seeAllActivitiesButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 135),
+            seeAllActivitiesButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -55),
             seeAllActivitiesButton.heightAnchor.constraint(equalToConstant: 200),
             seeAllActivitiesButton.widthAnchor.constraint(equalToConstant: 220),
             
-            dummyTemperatureButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 510),
-            dummyTemperatureButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 395),
+            dummyTemperatureButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 475),
+            dummyTemperatureButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 320),
             dummyTemperatureButton.heightAnchor.constraint(equalToConstant: 200),
             dummyTemperatureButton.widthAnchor.constraint(equalToConstant: 220),
             
-            dummyBloodPressureButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 510),
-            dummyBloodPressureButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -325),
+            dummyBloodPressureButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 475),
+            dummyBloodPressureButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -270),
             dummyBloodPressureButton.heightAnchor.constraint(equalToConstant: 200),
             dummyBloodPressureButton.widthAnchor.constraint(equalToConstant: 220),
             
-            seeAllSymptomsButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 510),
-            seeAllSymptomsButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -85),
+            seeAllSymptomsButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 475),
+            seeAllSymptomsButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -55),
             seeAllSymptomsButton.heightAnchor.constraint(equalToConstant: 200),
             seeAllSymptomsButton.widthAnchor.constraint(equalToConstant: 220),
         ]
@@ -211,47 +211,63 @@ class DummyHealthViewController: UIViewController {
     }
     
     @objc private func dummySmartWatchButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummyBloodOxygenButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummyBloodPressureButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummyCardioButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummyFallDetectionButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummyHeartRateButtonAction() {
-        
+        navigationController?.pushViewController(DummyHeartRateViewController(), animated: true)
     }
     
     @objc private func dummyStepsButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummyStretchButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func seeAllActivitiesButtonAction() {
-        
+        navigationController?.pushViewController(DummyTrainingViewController(), animated: true)
     }
     
     @objc private func seeAllSymptomsButtonAction() {
-        
+        navigationController?.pushViewController(DummySymptomViewController(), animated: true)
     }
     
     @objc private func dummyTemperatureButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

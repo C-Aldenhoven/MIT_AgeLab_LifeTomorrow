@@ -43,6 +43,9 @@
 		72AA7EEF2A1D590D00524337 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EEE2A1D590D00524337 /* HomeCell.swift */; };
 		72AA7EF12A1D592100524337 /* AccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EF02A1D592100524337 /* AccessoryViewController.swift */; };
 		72AA7EF32A1D593700524337 /* AccessoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AA7EF22A1D593700524337 /* AccessoryCell.swift */; };
+		72D39CD12A566B57000F6DA9 /* DummyTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D39CD02A566B57000F6DA9 /* DummyTrainingViewController.swift */; };
+		72D39CD32A566B6C000F6DA9 /* DummySymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D39CD22A566B6C000F6DA9 /* DummySymptomViewController.swift */; };
+		72D39CD52A566D9D000F6DA9 /* DummyHeartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D39CD42A566D9D000F6DA9 /* DummyHeartRateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		72AA7EEE2A1D590D00524337 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		72AA7EF02A1D592100524337 /* AccessoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryViewController.swift; sourceTree = "<group>"; };
 		72AA7EF22A1D593700524337 /* AccessoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryCell.swift; sourceTree = "<group>"; };
+		72D39CD02A566B57000F6DA9 /* DummyTrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTrainingViewController.swift; sourceTree = "<group>"; };
+		72D39CD22A566B6C000F6DA9 /* DummySymptomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySymptomViewController.swift; sourceTree = "<group>"; };
+		72D39CD42A566D9D000F6DA9 /* DummyHeartRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHeartRateViewController.swift; sourceTree = "<group>"; };
 		8054E3BCA24B28CA0828A141 /* Pods_LifeTomorrowWatch_Watch_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTomorrowWatch_Watch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F050BE96B19FB7DCBB9A1770 /* Pods-LifeTomorrowWatch Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeTomorrowWatch Watch App.release.xcconfig"; path = "Target Support Files/Pods-LifeTomorrowWatch Watch App/Pods-LifeTomorrowWatch Watch App.release.xcconfig"; sourceTree = "<group>"; };
 		F05EEB6BC5026CF95BD8F1F7 /* Pods_LifeTomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeTomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +299,9 @@
 			isa = PBXGroup;
 			children = (
 				729C49262A53628400D3AAB9 /* DummyHealthViewController.swift */,
+				72D39CD02A566B57000F6DA9 /* DummyTrainingViewController.swift */,
+				72D39CD22A566B6C000F6DA9 /* DummySymptomViewController.swift */,
+				72D39CD42A566D9D000F6DA9 /* DummyHeartRateViewController.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -487,12 +496,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				726FB25B2A01655E0077B990 /* HomeViewController.swift in Sources */,
+				72D39CD12A566B57000F6DA9 /* DummyTrainingViewController.swift in Sources */,
 				72AA7EF32A1D593700524337 /* AccessoryCell.swift in Sources */,
 				720805082A0AFAAC001E154B /* UIColor.swift in Sources */,
 				72AA7EEF2A1D590D00524337 /* HomeCell.swift in Sources */,
 				729C492D2A5362FA00D3AAB9 /* DummySmartHomeViewController.swift in Sources */,
 				729C49312A53A6DC00D3AAB9 /* DummyRachaelContactViewController.swift in Sources */,
 				720803D62A09763E001E154B /* HealthViewController.swift in Sources */,
+				72D39CD52A566D9D000F6DA9 /* DummyHeartRateViewController.swift in Sources */,
 				726FB2572A01655E0077B990 /* AppDelegate.swift in Sources */,
 				726FB2882A0424BB0077B990 /* NavigationController.swift in Sources */,
 				729C49272A53628400D3AAB9 /* DummyHealthViewController.swift in Sources */,
@@ -503,6 +514,7 @@
 				729C492F2A53A6CA00D3AAB9 /* DummyJoeContactViewController.swift in Sources */,
 				720803D22A097612001E154B /* DataSharingAndProfileViewController.swift in Sources */,
 				72AA7EED2A1D58BC00524337 /* BaseCollectionViewController.swift in Sources */,
+				72D39CD32A566B6C000F6DA9 /* DummySymptomViewController.swift in Sources */,
 				729C49292A5362CF00D3AAB9 /* DummyDataSharingViewController.swift in Sources */,
 				720805062A0AFA99001E154B /* NSDateComponents.swift in Sources */,
 				720803D82A09893B001E154B /* LoginViewController.swift in Sources */,

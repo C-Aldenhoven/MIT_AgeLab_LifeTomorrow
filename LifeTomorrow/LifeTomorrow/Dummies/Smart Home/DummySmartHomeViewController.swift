@@ -28,30 +28,30 @@ class DummySmartHomeViewController: UIViewController {
             backgroundImageView.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
             backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
-            dummySmartWatchButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 160),
+            dummySmartWatchButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 140),
             dummySmartWatchButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 30),
-            dummySmartWatchButton.heightAnchor.constraint(equalToConstant: 270),
-            dummySmartWatchButton.widthAnchor.constraint(equalToConstant: 360),
+            dummySmartWatchButton.heightAnchor.constraint(equalToConstant: 260),
+            dummySmartWatchButton.widthAnchor.constraint(equalToConstant: 307),
             
-            dummySmartContactButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 160),
+            dummySmartContactButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 140),
             dummySmartContactButton.leadingAnchor.constraint(equalTo: dummySmartWatchButton.trailingAnchor, constant: 20),
-            dummySmartContactButton.heightAnchor.constraint(equalToConstant: 270),
-            dummySmartContactButton.widthAnchor.constraint(equalToConstant: 360),
+            dummySmartContactButton.heightAnchor.constraint(equalToConstant: 260),
+            dummySmartContactButton.widthAnchor.constraint(equalToConstant: 307),
             
-            dummySmartFireButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 160),
+            dummySmartFireButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 140),
             dummySmartFireButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -30),
-            dummySmartFireButton.heightAnchor.constraint(equalToConstant: 270),
-            dummySmartFireButton.widthAnchor.constraint(equalToConstant: 360),
+            dummySmartFireButton.heightAnchor.constraint(equalToConstant: 260),
+            dummySmartFireButton.widthAnchor.constraint(equalToConstant: 307),
             
-            dummySmartStoveButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -10),
+            dummySmartStoveButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -20),
             dummySmartStoveButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 30),
-            dummySmartStoveButton.heightAnchor.constraint(equalToConstant: 270),
-            dummySmartStoveButton.widthAnchor.constraint(equalToConstant: 360),
+            dummySmartStoveButton.heightAnchor.constraint(equalToConstant: 260),
+            dummySmartStoveButton.widthAnchor.constraint(equalToConstant: 307),
             
-            addDeviceButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -10),
+            addDeviceButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -20),
             addDeviceButton.leadingAnchor.constraint(equalTo: dummySmartStoveButton.trailingAnchor, constant: 20),
-            addDeviceButton.heightAnchor.constraint(equalToConstant: 270),
-            addDeviceButton.widthAnchor.constraint(equalToConstant: 360)
+            addDeviceButton.heightAnchor.constraint(equalToConstant: 260),
+            addDeviceButton.widthAnchor.constraint(equalToConstant: 307)
         ]
         NSLayoutConstraint.activate(constraints)
         
@@ -116,27 +116,39 @@ class DummySmartHomeViewController: UIViewController {
     // MARK: Functions
     
     @objc private func logOutButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummySmartWatchButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummySmartContactButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummySmartFireButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func dummySmartStoveButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func addDeviceButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

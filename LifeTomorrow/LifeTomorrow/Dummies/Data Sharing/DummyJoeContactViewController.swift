@@ -41,53 +41,53 @@ class DummyJoeContactViewController: UIViewController {
             
             callButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 120),
             callButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 40),
-            callButton.heightAnchor.constraint(equalToConstant: 110),
-            callButton.widthAnchor.constraint(equalToConstant: 160),
+            callButton.heightAnchor.constraint(equalToConstant: 100),
+            callButton.widthAnchor.constraint(equalToConstant: 130),
             
             emailButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 120),
             emailButton.leadingAnchor.constraint(equalTo: callButton.trailingAnchor, constant: 25),
-            emailButton.heightAnchor.constraint(equalToConstant: 110),
-            emailButton.widthAnchor.constraint(equalToConstant: 160),
+            emailButton.heightAnchor.constraint(equalToConstant: 100),
+            emailButton.widthAnchor.constraint(equalToConstant: 130),
             
             messageButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 120),
             messageButton.leadingAnchor.constraint(equalTo: emailButton.trailingAnchor, constant: 25),
-            messageButton.heightAnchor.constraint(equalToConstant: 110),
-            messageButton.widthAnchor.constraint(equalToConstant: 160),
+            messageButton.heightAnchor.constraint(equalToConstant: 100),
+            messageButton.widthAnchor.constraint(equalToConstant: 130),
             
             addressButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 120),
             addressButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -40),
-            addressButton.heightAnchor.constraint(equalToConstant: 110),
-            addressButton.widthAnchor.constraint(equalToConstant: 540),
+            addressButton.heightAnchor.constraint(equalToConstant: 100),
+            addressButton.widthAnchor.constraint(equalToConstant: 480),
             
-            selectAllButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 298),
+            selectAllButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 278),
             selectAllButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -42),
             selectAllButton.heightAnchor.constraint(equalToConstant: 20),
-            selectAllButton.widthAnchor.constraint(equalToConstant: 100),
+            selectAllButton.widthAnchor.constraint(equalToConstant: 110),
             
-            heartRateButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 350),
+            heartRateButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 340),
             heartRateButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 40),
-            heartRateButton.heightAnchor.constraint(equalToConstant: 100),
-            heartRateButton.widthAnchor.constraint(equalToConstant: 540),
+            heartRateButton.heightAnchor.constraint(equalToConstant: 90),
+            heartRateButton.widthAnchor.constraint(equalToConstant: 460),
             
-            locationButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 350),
+            locationButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 340),
             locationButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -40),
-            locationButton.heightAnchor.constraint(equalToConstant: 100),
-            locationButton.widthAnchor.constraint(equalToConstant: 540),
+            locationButton.heightAnchor.constraint(equalToConstant: 90),
+            locationButton.widthAnchor.constraint(equalToConstant: 460),
             
-            bloodOxygenButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 480),
+            bloodOxygenButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 460),
             bloodOxygenButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 40),
-            bloodOxygenButton.heightAnchor.constraint(equalToConstant: 100),
-            bloodOxygenButton.widthAnchor.constraint(equalToConstant: 540),
+            bloodOxygenButton.heightAnchor.constraint(equalToConstant: 90),
+            bloodOxygenButton.widthAnchor.constraint(equalToConstant: 460),
             
-            fallDetectionButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 480),
+            fallDetectionButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 460),
             fallDetectionButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -40),
-            fallDetectionButton.heightAnchor.constraint(equalToConstant: 100),
-            fallDetectionButton.widthAnchor.constraint(equalToConstant: 540),
+            fallDetectionButton.heightAnchor.constraint(equalToConstant: 90),
+            fallDetectionButton.widthAnchor.constraint(equalToConstant: 460),
             
-            stepsButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 610),
+            stepsButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 580),
             stepsButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 40),
-            stepsButton.heightAnchor.constraint(equalToConstant: 100),
-            stepsButton.widthAnchor.constraint(equalToConstant: 540),
+            stepsButton.heightAnchor.constraint(equalToConstant: 90),
+            stepsButton.widthAnchor.constraint(equalToConstant: 460)
         ]
         NSLayoutConstraint.activate(constraints)
         
@@ -169,7 +169,7 @@ class DummyJoeContactViewController: UIViewController {
     
     private var heartRateButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setBackgroundImage(UIImage(named: "heartRateButtonFilled"), for: .normal)
+        button.setBackgroundImage(UIImage(named: "heartRateButton"), for: .normal)
         button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(heartRateButtonAction), for: .touchUpInside)
@@ -215,47 +215,79 @@ class DummyJoeContactViewController: UIViewController {
     // MARK: Functions
     
     @objc private func editContactInfoButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func callButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func emailButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func messageButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func addressButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func selectAllButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func heartRateButtonAction() {
-        
+        if heartRateButton.backgroundImage(for: .normal) == UIImage(named: "heartRateButton") {
+            heartRateButton.setBackgroundImage(UIImage(named: "heartRateButtonFilled"), for: .normal)
+        } else {
+            heartRateButton.setBackgroundImage(UIImage(named: "heartRateButton"), for: .normal)
+        }
     }
     
     @objc private func locationButtonAction() {
-        
+        if locationButton.backgroundImage(for: .normal) == UIImage(named: "locationButton") {
+            locationButton.setBackgroundImage(UIImage(named: "locationButtonFilled"), for: .normal)
+        } else {
+            locationButton.setBackgroundImage(UIImage(named: "locationButton"), for: .normal)
+        }
     }
     
     @objc private func bloodOxygenButtonAction() {
-        
+        if bloodOxygenButton.backgroundImage(for: .normal) == UIImage(named: "bloodOxygenButton") {
+            bloodOxygenButton.setBackgroundImage(UIImage(named: "bloodOxygenButtonFilled"), for: .normal)
+        } else {
+            bloodOxygenButton.setBackgroundImage(UIImage(named: "bloodOxygenButton"), for: .normal)
+        }
     }
     
     @objc private func fallDetectionButtonAction() {
-        
+        if fallDetectionButton.backgroundImage(for: .normal) == UIImage(named: "fallDetectionButton") {
+            fallDetectionButton.setBackgroundImage(UIImage(named: "fallDetectionButtonFilled"), for: .normal)
+        } else {
+            fallDetectionButton.setBackgroundImage(UIImage(named: "fallDetectionButton"), for: .normal)
+        }
     }
     
     @objc private func stepsButtonAction() {
-        
+        if stepsButton.backgroundImage(for: .normal) == UIImage(named: "stepsButton") {
+            stepsButton.setBackgroundImage(UIImage(named: "stepsButtonFilled"), for: .normal)
+        } else {
+            stepsButton.setBackgroundImage(UIImage(named: "stepsButton"), for: .normal)
+        }
     }
     
 }

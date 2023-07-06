@@ -35,35 +35,35 @@ class DummyProfileViewController: UIViewController {
             logOutButton.heightAnchor.constraint(equalToConstant: 40),
             logOutButton.widthAnchor.constraint(equalToConstant: 140),
             
-            phoneNumberButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 270),
-            phoneNumberButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 30),
+            phoneNumberButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 240),
+            phoneNumberButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 20),
             phoneNumberButton.heightAnchor.constraint(equalToConstant: 150),
-            phoneNumberButton.widthAnchor.constraint(equalToConstant: 540),
+            phoneNumberButton.widthAnchor.constraint(equalToConstant: 495),
             
-            passwordButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 270),
-            passwordButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -30),
+            passwordButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 240),
+            passwordButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -20),
             passwordButton.heightAnchor.constraint(equalToConstant: 150),
-            passwordButton.widthAnchor.constraint(equalToConstant: 540),
+            passwordButton.widthAnchor.constraint(equalToConstant: 495),
             
-            emailButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 420),
-            emailButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 30),
+            emailButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 390),
+            emailButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 20),
             emailButton.heightAnchor.constraint(equalToConstant: 150),
-            emailButton.widthAnchor.constraint(equalToConstant: 540),
+            emailButton.widthAnchor.constraint(equalToConstant: 495),
             
-            notificationsButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 420),
-            notificationsButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -30),
+            notificationsButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 390),
+            notificationsButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -20),
             notificationsButton.heightAnchor.constraint(equalToConstant: 150),
-            notificationsButton.widthAnchor.constraint(equalToConstant: 540),
+            notificationsButton.widthAnchor.constraint(equalToConstant: 495),
             
-            profileAddressButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 570),
-            profileAddressButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 30),
+            profileAddressButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 540),
+            profileAddressButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 20),
             profileAddressButton.heightAnchor.constraint(equalToConstant: 150),
-            profileAddressButton.widthAnchor.constraint(equalToConstant: 540),
+            profileAddressButton.widthAnchor.constraint(equalToConstant: 495),
             
-            demographicsButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 570),
-            demographicsButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -30),
+            demographicsButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 540),
+            demographicsButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -20),
             demographicsButton.heightAnchor.constraint(equalToConstant: 150),
-            demographicsButton.widthAnchor.constraint(equalToConstant: 540),
+            demographicsButton.widthAnchor.constraint(equalToConstant: 495),
         ]
         NSLayoutConstraint.activate(constraints)
         
@@ -146,31 +146,45 @@ class DummyProfileViewController: UIViewController {
     // MARK: Functions
     
     @objc private func logOutButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func phoneNumberButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func passwordButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func emailButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func notificationsButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func profileAddressButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func demographicsButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

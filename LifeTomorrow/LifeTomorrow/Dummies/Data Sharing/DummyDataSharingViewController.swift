@@ -27,20 +27,20 @@ class DummyDataSharingViewController: UIViewController {
             backgroundImageView.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
             backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
-            joeButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 160),
-            joeButton.heightAnchor.constraint(equalToConstant: 340),
-            joeButton.leftAnchor.constraint(equalTo: guide.leftAnchor, constant: 20),
-            joeButton.rightAnchor.constraint(equalTo: guide.centerXAnchor, constant: -5),
+            joeButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 155),
+            joeButton.heightAnchor.constraint(equalToConstant: 320),
+            joeButton.leftAnchor.constraint(equalTo: guide.leftAnchor, constant: 30),
+            joeButton.rightAnchor.constraint(equalTo: guide.centerXAnchor, constant: -10),
             
-            rachaelButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 160),
-            rachaelButton.heightAnchor.constraint(equalToConstant: 340),
-            rachaelButton.leftAnchor.constraint(equalTo: guide.centerXAnchor, constant: 5),
-            rachaelButton.rightAnchor.constraint(equalTo: guide.rightAnchor, constant: -20),
+            rachaelButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 155),
+            rachaelButton.heightAnchor.constraint(equalToConstant: 320),
+            rachaelButton.leftAnchor.constraint(equalTo: guide.centerXAnchor, constant: 10),
+            rachaelButton.rightAnchor.constraint(equalTo: guide.rightAnchor, constant: -30),
             
-            addNewContactButton.heightAnchor.constraint(equalToConstant: 210),
-            addNewContactButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor),
-            addNewContactButton.leftAnchor.constraint(equalTo: guide.leftAnchor, constant: 20),
-            addNewContactButton.rightAnchor.constraint(equalTo: guide.centerXAnchor, constant: -5)
+            addNewContactButton.heightAnchor.constraint(equalToConstant: 185),
+            addNewContactButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -20),
+            addNewContactButton.leftAnchor.constraint(equalTo: guide.leftAnchor, constant: 30),
+            addNewContactButton.rightAnchor.constraint(equalTo: guide.centerXAnchor, constant: -10)
         ]
         NSLayoutConstraint.activate(constraints)
         
@@ -107,6 +107,8 @@ class DummyDataSharingViewController: UIViewController {
     }
     
     @objc private func addNewContactButtonAction() {
-        
+        let alert = UIAlertController(title: "This function will be available soon:)", message: nil, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
